@@ -1,6 +1,8 @@
 :-use_module(library(clpfd)).
 
+% Tested so far courses of (lectures, tutorials), (lectures, tutorials, labs), (labs).
 % ------------ Facts ------------ %
+% 1 -> Math, 2 -> CS 1, 3 -> Advanced
 
 % lecture(CourseNum, Slot, Group)
 lecture1(1, [1,5]).
@@ -14,6 +16,9 @@ lecture2(2, [0, 0]).
 
 % lecture1(2, 1, 2).
 % lecture2(2, 0, 2).
+
+lecture1(3, [0, 0]).
+lecture2(3, [0, 0]).
 
 % ------------ %
 
@@ -30,6 +35,9 @@ tutorial2(2, [0, 0]).
 % tutorial1(2, 26, 2).
 % tutorial2(2, 0, 2).
 
+tutorial1(3, [0, 0]).
+tutorial2(3, [0, 0]).
+
 % ------------ %
 
 % Lab(CourseNum, Slot, TutorialGroup)
@@ -44,6 +52,9 @@ lab2(2, [0, 0]).
 
 % lab1(2, 30, 2).
 % lab2(2, 0, 2).
+
+lab1(3, [27, 14]).
+lab2(3, [28, 15]).
 
 % ------------ Main Perdicates ------------ %
 
@@ -80,7 +91,7 @@ scheduleCourse(CourseList, L, Score):-
   append(L1, L2, L).
 
 scheduleCourses(L, Score):-
-  scheduleCourse([1, 2], L1, Score),
+  scheduleCourse([1, 2, 3], L1, Score),
   delete(L1, 0, L),
   all_different(L),
   labeling([min(Score)], L),
