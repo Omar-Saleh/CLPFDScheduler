@@ -23,7 +23,7 @@ lecture2(3, [0, 0]).
 % ------------ %
 
 % Tutorial(CourseNum, Slot, TutorialGroup)
-tutorial1(1, [5, 6]).
+tutorial1(1, [7, 8]).
 tutorial2(1, [25, 12]).
 
 % tutorial1(1, 6, 2).
@@ -53,8 +53,8 @@ lab2(2, [0, 0]).
 % lab1(2, 30, 2).
 % lab2(2, 0, 2).
 
-lab1(3, [27, 14]).
-lab2(3, [28, 15]).
+lab1(3, [5]).
+lab2(3, [6]).
 
 % ------------ Main Perdicates ------------ %
 
@@ -90,18 +90,17 @@ scheduleCourse(CourseList, L, Score):-
   Score #= NewScore + CurrentScore,
   append(L1, L2, L).
 
-scheduleCourses(L, Score):-
-  scheduleCourse([1, 2, 3], L1, Score),
+scheduleCourses(L2):-
+  scheduleCourse([1 , 2, 3], L1, Score),
   delete(L1, 0, L),
   all_different(L),
-  labeling([min(Score)], L),
-  min_list(L, FirstSlot),
-  max_list(L, LastSlot).
+  findall(L, labeling([min(Score)], L), L2).
 
 
 % ------------ Supporting Perdicates ------------ %
 
 calculateScore(_, _, 0, 0).
+
 calculateScore(Y2, Y3, 1, Score):-
   abs(Y2 - Y3) #= Score.
 
