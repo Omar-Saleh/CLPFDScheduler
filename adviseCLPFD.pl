@@ -97,6 +97,27 @@ scheduleCourses(L2):-
   findall(L, labeling([min(Score)], L), L2).
 
 
+generateScheduleConfigurations(L):-
+  length(ObligatoryCoursesList, N1),
+  obligatoryCourses(ConstraintVars, N1),
+  N2 #= 8 - N1,
+  optionalCourses(RestOfConstraintsVars, N2),
+  append(ConstraintVars, RestOfConstraintsVars, L1)
+  L1 = [X1, X2, X3, X4, X5, X6, X7, X8],
+  element(X1, CourseHours, Y1),
+  element(X2, CourseHours, Y2),
+  element(X3, CourseHours, Y3),
+  element(X4, CourseHours, Y4),
+  element(X5, CourseHours, Y5),
+  element(X6, CourseHours, Y6),
+  element(X7, CourseHours, Y7),
+  element(X8, CourseHours, Y8),
+  SemesterHours #= Y1 + Y2 + Y3 + Y4 + Y5 + Y6 + Y7 + Y8,
+  SemesterHours #=< 30,
+  delete(L1, 0, L),
+  all_different(L),
+  labeling([max(SemesterHours)], L).
+
 % ------------ Supporting Perdicates ------------ %
 
 calculateScore(_, _, 0, 0).
@@ -116,3 +137,19 @@ countUnique([H|T], AlreadySeen, Num):-
 countUnique([H | T], AlreadySeen, Num):-
   element(_, AlreadySeen, H),
   countUnique(T, AlreadySeen, Num).
+
+obligatoryCourses([], 0).
+
+obligatoryCourses(ConstraintVars, N):-
+  element(_, ObligatoryCoursesList, X),
+  N1 #= N - 1,
+  obligatoryCoursesList(RestOfConstraintVars, N1),
+  append([X], RestOfConstraintVars, ConstraintVars).
+
+optionalCourses([], 0).
+
+optionalCourses(ConstraintVars, N):-
+  element(_, AllowedCourses, X),
+  N1 #= N - 1,
+  obligatoryCoursesList(RestOfConstraintVars, N1),
+  append([X], RestOfConstraintVars, ConstraintVars).
