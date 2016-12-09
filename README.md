@@ -1,0 +1,2 @@
+# CLPFDScheduler
+This is a school project where it is required to implement a university scheduler for students to automate the advising process and make advisors life easier. The Implementation takes into account the student wishes and compromises between various constraints e.g obligatory courses, students perferred courses, minimum days off etc. The project is implemented in prolog, using the CLPFD library.
