@@ -97,17 +97,16 @@ scheduleCourses(L2):-
   findall(L, labeling([min(Score)], L), L2).
 
 
-generateScheduleConfigurations(X1, X2, X3, X4, X5, X6, X7, X8):-
-  print('Here'),
-  ObligatoryCoursesList = [4],
-  AllowedCourses = [1, 2, 3],
-  CourseHours = [0, 8, 4, 10, 3],
-  length(ObligatoryCoursesList, N1),
+generateScheduleConfigurations(L2, SemesterHours):-
+  CourseHours = [0, 8, 4, 10],
+  Ob = [4],
+  length(Ob, N1),
   N2 #= 8 - N1,
-  optionalCourses(ConstraintVars, N2),
-  append(ConstraintVars, ObligatoryCoursesList, L1),
-  L1 = [X1, X2, X3, X4, X5, X6, X7, X8].
-/*  element(X1, CourseHours, Y1),
+  obligatoryCourses(ObligatoryCourseList, N1),
+  optionalCourses(OptionalCourseList, N2),
+  append(OptionalCourseList, ObligatoryCourseList, L1),
+  L1 = [X1, X2, X3, X4, X5, X6, X7, X8],
+  element(X1, CourseHours, Y1),
   element(X2, CourseHours, Y2),
   element(X3, CourseHours, Y3),
   element(X4, CourseHours, Y4),
@@ -115,10 +114,13 @@ generateScheduleConfigurations(X1, X2, X3, X4, X5, X6, X7, X8):-
   element(X6, CourseHours, Y6),
   element(X7, CourseHours, Y7),
   element(X8, CourseHours, Y8),
+  SemesterHours #= Y1 + Y2 + Y3 + Y4 + Y5 + Y6 + Y7 + Y8,
+  SemesterHours #< 30,
+  SemesterHours #> 0,
+  labeling([max(SemesterHours)], L1),
   delete(L1, 1, L),
-  all_different(L),
-  labeling([], L).
-*/
+  all_different(L).
+% findall(L1, (labeling([max(SemesterHours)], L1), delete(L1, 1, L), all_different(L)) , L2).
 
 % ------------ Supporting Perdicates ------------ %
 
@@ -140,10 +142,20 @@ countUnique([H | T], AlreadySeen, Num):-
   element(_, AlreadySeen, H),
   countUnique(T, AlreadySeen, Num).
 
+obligatoryCourses([], 0).
+
+obligatoryCourses(ConstraintVars, N):-
+  N #> 0,
+  AllowedCourses = [4],
+  element(_, AllowedCourses, X),
+  N1 #= N - 1,
+  obligatoryCourses(RestOfConstraintVars, N1),
+  append([X], RestOfConstraintVars, ConstraintVars).
 
 optionalCourses([], 0).
 
 optionalCourses(ConstraintVars, N):-
+  N #> 0,
   AllowedCourses = [1, 2, 3],
   element(_, AllowedCourses, X),
   N1 #= N - 1,
