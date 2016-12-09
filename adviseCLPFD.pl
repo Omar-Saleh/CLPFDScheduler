@@ -1,5 +1,7 @@
 :-use_module(library(clpfd)).
 
+% ------------ Facts ------------ %
+
 % lecture(CourseNum, Slot, Group)
 lecture1(1, [1,5]).
 lecture2(1, [2, 8]).
@@ -13,7 +15,7 @@ lecture2(2, [0, 0]).
 % lecture1(2, 1, 2).
 % lecture2(2, 0, 2).
 
-% ------------
+% ------------ %
 
 % Tutorial(CourseNum, Slot, TutorialGroup)
 tutorial1(1, [5, 6]).
@@ -28,7 +30,7 @@ tutorial2(2, [0, 0]).
 % tutorial1(2, 26, 2).
 % tutorial2(2, 0, 2).
 
-% ------------
+% ------------ %
 
 % Lab(CourseNum, Slot, TutorialGroup)
 lab1(1, [0, 0]).
@@ -43,7 +45,7 @@ lab2(2, [0, 0]).
 % lab1(2, 30, 2).
 % lab2(2, 0, 2).
 
-% ------------
+% ------------ Main Perdicates ------------ %
 
 scheduleCourse([], [], 0).
 
@@ -72,18 +74,35 @@ scheduleCourse(CourseList, L, Score):-
   X6 #\= 0 #==> X6 #= X5 + 1,
   X5 #\= 0 #/\ X3 #\= 0 #==> Execute #= 1,
   X5 #= 0 #\/ X3 #= 0 #==> Execute #= 0,
-  calculateScore(Y2, Y3, Execute, Score),
+  calculateScore(Y2, Y3, Execute, CurrentScore),
   scheduleCourse(T, L2, NewScore),
+  Score #= NewScore + CurrentScore,
   append(L1, L2, L).
 
-% ------------
-
-scheduleCourses(L):-
+scheduleCourses(L, Score):-
   scheduleCourse([1, 2], L1, Score),
   delete(L1, 0, L),
   all_different(L),
-  labeling([], L).
+  labeling([min(Score)], L),
+  min_list(L, FirstSlot),
+  max_list(L, LastSlot).
+
+
+% ------------ Supporting Perdicates ------------ %
 
 calculateScore(_, _, 0, 0).
 calculateScore(Y2, Y3, 1, Score):-
   abs(Y2 - Y3) #= Score.
+
+
+countUnique([], _, 0).
+
+countUnique([H|T], AlreadySeen, Num):-
+  not(element(_, AlreadySeen, H)),
+  append(AlreadySeen, [H], UpdatedSeen),
+  countUnique(T, UpdatedSeen, NewNum),
+  Num #= 1 + NewNum.
+
+countUnique([H | T], AlreadySeen, Num):-
+  element(_, AlreadySeen, H),
+  countUnique(T, AlreadySeen, Num).
