@@ -58,11 +58,11 @@ lab2(3, [6]).
 
 % ------------ Main Perdicates ------------ %
 
-scheduleCourse([], [], 0).
+scheduleCourse([], [], [], 0).
 
 % Score is calculated in the case that the course consists of a tutorial and a lab, it is calculated as the absloute difference between the tutorial Group
 % And the lab Group.
-scheduleCourse(CourseList, L, Score):-
+scheduleCourse(CourseList, L, Schedule, Score):-
   CourseList = [H | T],
   L1 = [X1, X2, X3, X4, X5, X6],
   L1 ins 0..30,
@@ -86,18 +86,24 @@ scheduleCourse(CourseList, L, Score):-
   X5 #\= 0 #/\ X3 #\= 0 #==> Execute #= 1,
   X5 #= 0 #\/ X3 #= 0 #==> Execute #= 0,
   calculateScore(Y2, Y3, Execute, CurrentScore),
-  scheduleCourse(T, L2, NewScore),
+  scheduleCourse(T, L2, RestOfSchedule, NewScore),
   Score #= NewScore + CurrentScore,
+  parseSchedule(H, Y1, [X1, X2], LectureSchedule, 'Lecture'),
+  parseSchedule(H, Y2, [X3, X4], TutorialSchedule, 'Tutorial'),
+  parseSchedule(H, Y3, [X5, X6], LabSchedule, 'Lab'),
+  flatten([LectureSchedule, TutorialSchedule, LabSchedule], CurrentSchedule),
+  append(CurrentSchedule, RestOfSchedule, Schedule),
   append(L1, L2, L).
 
-scheduleCourses(L2):-
-  scheduleCourse([1 , 2, 3], L1, Score),
+scheduleCourses(L, Schedule):-
+  scheduleCourse([1 , 2, 3], L1, Schedule, Score),
   delete(L1, 0, L),
   all_different(L),
-  findall(L, labeling([min(Score)], L), L2).
+  labeling([min(Score)], L).
+%  findall(L, labeling([min(Score)], L), L2),
+%  print(L2).
 
-
-generateScheduleConfigurations(L2, SemesterHours):-
+generateScheduleConfigurations(L2, Probation):-
   CourseHours = [0, 8, 4, 10],
   Ob = [4],
   length(Ob, N1),
@@ -115,12 +121,20 @@ generateScheduleConfigurations(L2, SemesterHours):-
   element(X7, CourseHours, Y7),
   element(X8, CourseHours, Y8),
   SemesterHours #= Y1 + Y2 + Y3 + Y4 + Y5 + Y6 + Y7 + Y8,
-  SemesterHours #< 30,
+  Probation #= 0 #==> SemesterHours #< 34,
+  Probation #= 1 #==> SemesterHours #< 31,
   SemesterHours #> 0,
   labeling([max(SemesterHours)], L1),
   delete(L1, 1, L),
-  all_different(L).
+  all_different(L),
+  sort(L, L2).
+%  setof(L, (labeling([max(SemesterHours)], L1), delete(L1, 1, L), all_different(L)) , Ls).
 % findall(L1, (labeling([max(SemesterHours)], L1), delete(L1, 1, L), all_different(L)) , L2).
+
+generateAllowedCoursesList(L):-
+  X in 1..101,
+  filterCourses(X, 1),
+  findall(X, labeling([], [X]), L).
 
 % ------------ Supporting Perdicates ------------ %
 
@@ -161,3 +175,34 @@ optionalCourses(ConstraintVars, N):-
   N1 #= N - 1,
   optionalCourses(RestOfConstraintVars, N1),
   append([X], RestOfConstraintVars, ConstraintVars).
+
+preq(1, [4]).
+preq(2, [1]).
+preq(3, [1,2,3]).
+passedCourses([1,2,3]).
+
+filterCourses(_, 4).
+
+filterCourses(X, Y):-
+  Y #< 4,
+  passedCourses(P),
+  Y1 #= Y + 1,
+  preq(Y, L),
+  length(L, Length),
+  intersection(L, P, I),
+  length(I, IntersectionLength),
+  Length #\= IntersectionLength #==> X #\= Y,
+  filterCourses(X, Y1).
+
+% Slot is in the form slot(Subject, Type, Slot, Group).
+parseSchedule(_, _, [], [], _).
+
+parseSchedule(X1, Group, [A | B], Schedule, Type):-
+  A #= 0,
+  parseSchedule(X1, Group, B, RestOfSchedule, Type),
+  Schedule = RestOfSchedule.
+
+parseSchedule(X1, Group, [A | B], Schedule, Type):-
+  A #> 0,
+	parseSchedule(X1, Group, B, RestOfSchedule, Type),
+	append([slot(X1, Type, A, Group)], RestOfSchedule, Schedule).
