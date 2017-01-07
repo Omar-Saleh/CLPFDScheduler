@@ -56,6 +56,14 @@ lab2(2, [0, 0]).
 lab1(3, [5]).
 lab2(3, [6]).
 
+% ------------ %
+
+preq(1, [4]).
+preq(2, [1]).
+preq(3, [1,2,3]).
+
+passedCourses([1,2,3]).
+
 % ------------ Main Perdicates ------------ %
 
 scheduleCourse([], [], [], 0).
@@ -95,11 +103,12 @@ scheduleCourse(CourseList, L, Schedule, Score):-
   append(CurrentSchedule, RestOfSchedule, Schedule),
   append(L1, L2, L).
 
-scheduleCourses(L, Schedule):-
+scheduleCourses(L, Schedule, TotalGaps):-
   scheduleCourse([1 , 2, 3], L1, Schedule, Score),
   delete(L1, 0, L),
   all_different(L),
-  labeling([min(Score)], L).
+  countGaps(1, L, TotalGaps),
+  labeling([min(TotalGaps), min(Score)], L).
 %  findall(L, labeling([min(Score)], L), L2),
 %  print(L2).
 
@@ -124,12 +133,16 @@ generateScheduleConfigurations(L2, Probation):-
   Probation #= 0 #==> SemesterHours #< 34,
   Probation #= 1 #==> SemesterHours #< 31,
   SemesterHours #> 0,
-  labeling([max(SemesterHours)], L1),
-  delete(L1, 1, L),
-  all_different(L),
-  sort(L, L2).
-%  setof(L, (labeling([max(SemesterHours)], L1), delete(L1, 1, L), all_different(L)) , Ls).
-% findall(L1, (labeling([max(SemesterHours)], L1), delete(L1, 1, L), all_different(L)) , L2).
+  % labeling([max(SemesterHours)], L1),
+  % delete(L1, 1, L),
+  % all_different(L),
+  % sort(L, L2).
+  findall(L3, (labeling([max(SemesterHours)], L1),
+            delete(L1, 1, L),
+            all_different(L),
+            sort(L, L3)),
+        L2).
+  % findall(L1, (labeling([max(SemesterHours)], L1), delete(L1, 1, L), all_different(L)) , L2).
 
 generateAllowedCoursesList(L):-
   X in 1..101,
@@ -176,11 +189,6 @@ optionalCourses(ConstraintVars, N):-
   optionalCourses(RestOfConstraintVars, N1),
   append([X], RestOfConstraintVars, ConstraintVars).
 
-preq(1, [4]).
-preq(2, [1]).
-preq(3, [1,2,3]).
-passedCourses([1,2,3]).
-
 filterCourses(_, 4).
 
 filterCourses(X, Y):-
@@ -204,5 +212,41 @@ parseSchedule(X1, Group, [A | B], Schedule, Type):-
 
 parseSchedule(X1, Group, [A | B], Schedule, Type):-
   A #> 0,
-	parseSchedule(X1, Group, B, RestOfSchedule, Type),
-	append([slot(X1, Type, A, Group)], RestOfSchedule, Schedule).
+  parseSchedule(X1, Group, B, RestOfSchedule, Type),
+  append([slot(X1, Type, A, Group)], RestOfSchedule, Schedule).
+
+
+countGaps(31, _, 0).
+
+countGaps(Slot, Schedule, TotalGaps):-
+  Slot #< 31,
+  element(_, Schedule, Slot),
+  NewSlot #= Slot + 1,
+  countGaps(NewSlot, Schedule, TotalGaps).
+
+countGaps(Slot, Schedule, TotalGaps):-
+  Slot #< 31,
+  \+element(_, Schedule, Slot),
+  Start #= ((Slot // 5) * 5) + 1,
+  Finish #= ((Slot // 5) + 1) * 5,
+  RightBefore #= Slot - 1,
+  RightAfter #= Slot + 1,
+  checker(Start, RightBefore, Schedule, Res1),
+  checker(RightAfter, Finish, Schedule, Res2),
+  Res1 #= 1 #/\ Res2 #= 1 #==> TotalGaps #= RestOfGaps + 1,
+  Res1 #\= 1 #\/ Res2 #\= 1 #==> TotalGaps #= RestOfGaps,
+  countGaps(RightAfter, Schedule, RestOfGaps).
+
+checker(Current, Max, _, 0):-
+  Current #> Max.
+
+checker(Current, Max, Schedule, Res):-
+  Current #=< Max,
+  element(_, Schedule, Current),
+  Res #= 1.
+
+checker(Current, Max, Schedule, Res):-
+  Current #=< Max,
+  \+element(_, Schedule, Current),
+  NewCurrent #= Current + 1,
+  checker(NewCurrent, Max, Schedule, Res).
