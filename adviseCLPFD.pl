@@ -103,12 +103,13 @@ scheduleCourse(CourseList, L, Schedule, Score):-
   append(CurrentSchedule, RestOfSchedule, Schedule),
   append(L1, L2, L).
 
-scheduleCourses(L, Schedule, TotalGaps):-
+scheduleCourses(L, Schedule, TotalGaps, Difference):-
   scheduleCourse([1 , 2, 3], L1, Schedule, Score),
   delete(L1, 0, L),
   all_different(L),
   countGaps(1, L, TotalGaps),
-  labeling([min(TotalGaps), min(Score)], L).
+  differenceBetweenStartAndFinish(L, Difference),
+  labeling([min(TotalGaps), min(Score), min(Difference)], L).
 %  findall(L, labeling([min(Score)], L), L2),
 %  print(L2).
 
@@ -231,22 +232,49 @@ countGaps(Slot, Schedule, TotalGaps):-
   Finish #= ((Slot // 5) + 1) * 5,
   RightBefore #= Slot - 1,
   RightAfter #= Slot + 1,
-  checker(Start, RightBefore, Schedule, Res1),
-  checker(RightAfter, Finish, Schedule, Res2),
+  findASlotBetween(Start, RightBefore, Schedule, Res1),
+  findASlotBetween(RightAfter, Finish, Schedule, Res2),
   Res1 #= 1 #/\ Res2 #= 1 #==> TotalGaps #= RestOfGaps + 1,
   Res1 #\= 1 #\/ Res2 #\= 1 #==> TotalGaps #= RestOfGaps,
   countGaps(RightAfter, Schedule, RestOfGaps).
 
-checker(Current, Max, _, 0):-
+findASlotBetween(Current, Max, _, 0):-
   Current #> Max.
 
-checker(Current, Max, Schedule, Res):-
+findASlotBetween(Current, Max, Schedule, Res):-
   Current #=< Max,
   element(_, Schedule, Current),
   Res #= 1.
 
-checker(Current, Max, Schedule, Res):-
+findASlotBetween(Current, Max, Schedule, Res):-
   Current #=< Max,
   \+element(_, Schedule, Current),
   NewCurrent #= Current + 1,
-  checker(NewCurrent, Max, Schedule, Res).
+  findASlotBetween(NewCurrent, Max, Schedule, Res).
+
+
+differenceBetweenStartAndFinish(Schedule, Difference):-
+  findMin(Schedule, 31, Start),
+  findMax(Schedule, 0, Finish),
+  Difference #= Finish - Start.
+
+findMin([], Current, Current).
+
+findMin([H|T], Current, Best):-
+  Current #< H,
+  findMin(T, Current, Best).
+
+findMin([H|T], Current, Best):-
+  Current #> H,
+  findMin(T, H, Best).
+
+
+findMax([], Current, Current).
+
+findMax([H|T], Current, Best):-
+  Current #> H,
+  findMax(T, Current, Best).
+
+findMax([H|T], Current, Best):-
+  Current #< H,
+  findMax(T, H, Best).
