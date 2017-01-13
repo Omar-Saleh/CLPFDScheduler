@@ -57,8 +57,8 @@ function mapScheduleToUniqueNumbers(listOfCourses) {
 
 
   // console.log(listOfCourses.length);
-  console.log(courseMap);
-  console.log(lectureMap);
+  // console.log(courseMap);
+  // console.log(lectureMap);
   // console.log(labMap[4]);
   // console.log(tutorialMap[4]);
   // console.log(groupMap);
@@ -140,11 +140,7 @@ function mapScheduleToUniqueNumbers(listOfCourses) {
 
   if(lecs.length != 0)
   {
-      if(i == 13)
-      {
-        console.log(lecs);
-        console.log(lecs[1][0]);
-      }
+     
      if( lecs.length > 1 && lecs[0][0] != lecs[1][0])
       {
         for(var j = 0; j < lecs.length; j++)
