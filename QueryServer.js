@@ -1,13 +1,14 @@
-var http = require('http');
+  var http = require('http');
 var parse = require('csv-parse');
 var fs = require('fs');
 
 var seen = 1;
+var groupNumber = 1;
 var courseMap = {};
 tutorialMap = {};
 lectureMap = {};
 labMap = {};
-
+groupMap = {};
 
 fs.readFile('C:/Users/Omar/github/CLPFDScheduler/courses.csv', 'utf8', function (err,data) {
   if (err) {
@@ -30,25 +31,34 @@ function mapScheduleToUniqueNumbers(listOfCourses) {
       lectureMap[seen++] = [];
     }
       // console.log(tutorialMap);
+    var currentCourseNumber = courseMap[listOfCourses[i]['course_code']];
+    var group = listOfCourses[i]['group'].replace(/[^\d]/g, '');
+
+    if(!groupMap[group])
+      groupMap[group] = groupNumber++;
+
     switch (listOfCourses[i]['type']) {
       case 'Lab':
-        labMap[courseMap[listOfCourses[i]['course_code']]].push([listOfCourses[i]['day'], listOfCourses[i]['slot']]);
+        labMap[courseMap[listOfCourses[i]['course_code']]].push([listOfCourses[i]['day'], listOfCourses[i]['slot'], group]);
         break;
       case 'Tut':
-        tutorialMap[courseMap[listOfCourses[i]['course_code']]].push([listOfCourses[i]['day'], listOfCourses[i]['slot']]);
+        tutorialMap[courseMap[listOfCourses[i]['course_code']]].push([listOfCourses[i]['day'], listOfCourses[i]['slot'], group]);
         break;
       case 'Lec':
-        lectureMap[courseMap[listOfCourses[i]['course_code']]].push([listOfCourses[i]['day'], listOfCourses[i]['slot']]);
+        lectureMap[courseMap[listOfCourses[i]['course_code']]].push([listOfCourses[i]['day'], listOfCourses[i]['slot'], group]);
         break;
       default:
         break;
     }
   }
-  console.log(listOfCourses.length);
-  console.log(courseMap);
-  console.log(lectureMap);
-  console.log(labMap);
-  console.log(tutorialMap);
+  // console.log(listOfCourses.length);
+  // console.log(courseMap);
+  // console.log(lectureMap);
+  // console.log(labMap);
+  // console.log(tutorialMap);
+  console.log(groupMap);
+  // console.log(listOfCourses[0]['group']);
+  // console.log(listOfCourses[0]['group'].replace(/[^\d]/g, ''));
 }
 
 //The url we want is: 'www.random.org/integers/?num=1&min=1&max=10&col=1&base=10&format=plain&rnd=new'
