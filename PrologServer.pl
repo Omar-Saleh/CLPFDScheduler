@@ -12,6 +12,7 @@ http_json:json_type('text/x-json').
 
 handle_api(Request) :-
         % http_read_json_dict(Request, Query),
+        consult(adviseCLPFD),
         print(Request),
         Solution = 'Hello',
         reply_json_dict(Solution).
@@ -29,6 +30,7 @@ server(Port) :-
         format-family is the most useful. See format/2.   */
 
         say_hi(_Request) :-
-                
+                        consult(adviseCLPFD),
                 format('Content-type: text/plain~n~n'),
-                format('Hello World!~n').
+                % format('Hello World!~n')
+                reply_json_dict([a,b,c,d]).
