@@ -1,7 +1,30 @@
-  var http = require('http');
+var http = require('http');
 var parse = require('csv-parse');
 var fs = require('fs');
+var express = require('express');
+var multer = require('multer');
+var pug = require('pug');
+var app = express();
+var routes = express.Router();
+var upload = multer({ dest: './uploads' });
 
+app.set('view engine', 'pug')
+
+app.listen(3000);
+
+app.get('/', function (req, res) {
+  res.render('index', { title: 'Hey', message: 'Hello there!' })
+})
+
+app.post('/uploadSchedule', function(req, res) {
+  console.dir(req.files);
+  res.redirect('/compiledSchedule');
+});
+
+
+
+
+// Parsing THE UPLOADED CSV File.
 var seen = 1;
 var groupNumber = 1;
 var courseMap = {};
@@ -39,13 +62,13 @@ function mapScheduleToUniqueNumbers(listOfCourses) {
 
     switch (listOfCourses[i]['type']) {
       case 'Lab':
-        labMap[courseMap[listOfCourses[i]['course_code']]].push([group, (listOfCourses[i]['day'] - 1) * 6 + parseInt(listOfCourses[i]['slot'])]);
+        labMap[courseMap[listOfCourses[i]['course_code']]].push([group, (listOfCourses[i]['day'] - 1) * 5 + parseInt(listOfCourses[i]['slot'])]);
         break;
       case 'Tut':
-        tutorialMap[courseMap[listOfCourses[i]['course_code']]].push([group,(listOfCourses[i]['day']- 1) * 6 + parseInt(listOfCourses[i]['slot'])]);
+        tutorialMap[courseMap[listOfCourses[i]['course_code']]].push([group,(listOfCourses[i]['day']- 1) * 5 + parseInt(listOfCourses[i]['slot'])]);
         break;
       case 'Lecture':
-        lectureMap[courseMap[listOfCourses[i]['course_code']]].push([group, (listOfCourses[i]['day'] - 1) * 6 + parseInt(listOfCourses[i]['slot'])]);
+        lectureMap[courseMap[listOfCourses[i]['course_code']]].push([group, (listOfCourses[i]['day'] - 1) * 5 + parseInt(listOfCourses[i]['slot'])]);
         break;
       default:
         break;
@@ -64,6 +87,7 @@ function mapScheduleToUniqueNumbers(listOfCourses) {
   // console.log(groupMap);
   // console.log(listOfCourses[0]['group']);
   // console.log(listOfCourses[0]['group'].replace(/[^\d]/g, ''));
+  var textToWrite = "";
 
   for(var i = 1; i < Object.keys(courseMap).length + 1; i++)
   {
@@ -86,7 +110,7 @@ function mapScheduleToUniqueNumbers(listOfCourses) {
 //           console.log(labs);
 //         }
 
-    
+
   if(tuts.length != 0)
   {
      if(tuts[0][0] != tuts[1][0])
@@ -107,7 +131,7 @@ function mapScheduleToUniqueNumbers(listOfCourses) {
           else
           {
             tuts2 = tuts2.concat([tuts[j][1]]);
-          } 
+          }
         }
       }
   }
@@ -133,19 +157,19 @@ function mapScheduleToUniqueNumbers(listOfCourses) {
           else
           {
             labs2 = labs2.concat([labs[j][1]]);
-          } 
+          }
         }
       }
   }
 
   if(lecs.length != 0)
   {
-     
+
      if( lecs.length > 1 && lecs[0][0] != lecs[1][0])
       {
         for(var j = 0; j < lecs.length; j++)
         {
-          lecs1 = labs1.concat([lecs[j][1]]);
+          lecs1 = lecs1.concat([lecs[j][1]]);
         }
       }
       else
@@ -159,102 +183,66 @@ function mapScheduleToUniqueNumbers(listOfCourses) {
           else
           {
             lecs2 = lecs2.concat([lecs[j][1]]);
-          } 
+          }
         }
       }
   }
 
-  
+  if(lecs1.length == 0)
+  {
+    lecs1 = [0];
+    lecs2 = [0];
+  }
+  else if(lecs2.length == 0)
+  {
+    for(var j = 0; j < lecs1.length; j++)
+    {
+      lecs2 = lecs2.concat([0]);
+    }
+  }
 
-  console.log("lecture1(" + i + ", [" + lecs1 + "]).");
-    console.log("lecture2(" + i + ", [" + lecs2 + "]).");
-    console.log("tutorial1(" + i + ", [" + tuts1 + "]).");
-    console.log("tutorial2(" + i + ", [" + tuts2 + "]).");
-    console.log("labs1(" + i + ", [" + labs1 + "]).");
-    console.log("labs2(" + i + ", [" + labs2 + "]).");
+  if(tuts1.length == 0)
+  {
+    tuts1 = [0];
+    tuts2 = [0];
+  }
+  else if(tuts2.length == 0)
+  {
+    for(var j = 0; j < tuts1.length; j++)
+    {
+      tuts2 =tuts2.concat([0]);
+    }
+  }
 
-
-
-    // if(tuts.length != 0 && labs.length != 0)
-    // {
-    //   // console.log(tuts);
-    //     for(var j = 0; j < tuts.length; j++)
-    //     {
-    //       tuts1 = tuts1.concat([tuts[j][1]]);
-    //       labs1 = labs1.concat([labs[j][1]]);
-    //     }
-    // }
-    // else if(tuts.length != 0 && labs.length == 0)
-    // {
-      
-    //   if(tuts[0][0] != tuts[1][0])
-    //   {
-    //     for(var j = 0; j < tuts.length; j++)
-    //     {
-    //       tuts1 = tuts1.concat([tuts[j][1]]);
-    //     }
-    //   }
-    //   else
-    //   {
-    //     for(var j = 0; j < tuts.length; j++)
-    //     {
-    //       if(j % 2 == 0)
-    //       {
-    //         tuts1 = tuts1.concat([tuts[j][1]]);
-    //       }
-    //       else
-    //       {
-    //         tuts2 = tuts2.concat([tuts[j][1]]);
-    //       } 
-    //     }
-    //   }
-    // }
-    // else if(labs.length != 0 && tuts.length == 0)
-    // {
-
-    //   if(labs[0][0] != labs[1][0])
-    //   {
-
-    //     for(var j = 0; j < labs.length; j++)
-    //     {
-    //       labs1 = labs1.concat([labs[j][1]]);
-    //     }
-    //   }
-    //   else
-    //   {
-
-    //    for(var j = 0; j < labs.length; j++)
-    //     {
-    //       if(j % 2 == 0)
-    //       {
-    //         labs1 = labs1.concat([labs[j][1]]);
-    //       }
-    //       else
-    //       {
-    //         labs2 = labs2.concat([labs[j][1]]);
-    //       } 
-    //     }
-    //   }
-    // }
-    // else
-    // {
-    //   console.log("hello");
-    // }
-
-
-
-    
-
-
-
-
-
-
-
-
+  if(labs1.length == 0)
+  {
+    labs1 = [0];
+    labs2 = [0];
+  }
+  else if(labs2.length == 0)
+  {
+    for(var j = 0; j <labs1.length; j++)
+    {
+      labs2 = labs2.concat([0]);
+    }
+  }
+    // console.log(courseMap);
+    // console.log("lecture1(" + i + ", [" + lecs1 + "]).");
+    // console.log("lecture2(" + i + ", [" + lecs2 + "]).");
+    // console.log("tutorial1(" + i + ", [" + tuts1 + "]).");
+    // console.log("tutorial2(" + i + ", [" + tuts2 + "]).");
+    // console.log("labs1(" + i + ", [" + labs1 + "]).");
+    // console.log("labs2(" + i + ", [" + labs2 + "]).");
+    textToWrite += "lecture1(" + i + ",[" + lecs1 + "])." + '\n';
+    textToWrite += "lecture2(" + i + ",[" + lecs2 + "])." + '\n';
+    textToWrite += "tutorial1(" + i + ",[" + tuts1 + "])." + '\n';
+    textToWrite += "tutorial2(" + i + ",[" + tuts2 + "])." + '\n';
+    textToWrite += "lab1(" + i + ",[" + labs1 + "])."  + '\n';
+    textToWrite += "lab2(" + i + ",[" + labs2 + "])."  + '\n';
   }
 
 
+  fs.writeFileSync('kb1.pl', textToWrite, 'utf8');
 
 
 
@@ -289,5 +277,3 @@ function mapScheduleToUniqueNumbers(listOfCourses) {
 // }
 //
 // http.request(options, callback).end();
-
-

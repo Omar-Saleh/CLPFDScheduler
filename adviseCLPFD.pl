@@ -17,11 +17,16 @@ http_json:json_type('text/x-json').
 
 % ------------ Main Perdicates ------------ %
 
-scheduleCourse([], [], [], 0).
+% ------------ Facts ------------ %
+% 1 -> Math, 2 -> CS 1, 3 -> Advanced
+
+% lecture(CourseNum, Slot, Group)
+
+scheduleCourse([], [], [], []).
 
 % Score is calculated in the case that the course consists of a tutorial and a lab, it is calculated as the absloute difference between the tutorial Group
 % And the lab Group.
-scheduleCourse(CourseList, L, Schedule, Score):-
+scheduleCourse(CourseList, L, Schedule, Groups):-
   CourseList = [H | T],
   L1 = [X1, X2, X3, X4, X5, X6],
   L1 ins 0..30,
@@ -39,28 +44,35 @@ scheduleCourse(CourseList, L, Schedule, Score):-
   element(Y3, Labs2, X6),
   X1 #\= 0 #==> X1 #\= X2,
   X3 #\= 0 #==> X3 #\= X4,
-  X5 #\= 0 #==> X5 #> X3 #/\ X5 #\= X6,
-  X5 #= 0 #\/ X3 #= 0 #==> Y2 #= Y3,
+  X5 #\= 0 #==> (X5 #> X3 #/\ X5 #\= X6),
+  (X5 #\= 0 #/\ X3 #\= 0) #==> Y2 #= Y3,
   X6 #\= 0 #==> X6 #= X5 + 1,
   X5 #\= 0 #/\ X3 #\= 0 #==> Execute #= 1,
   X5 #= 0 #\/ X3 #= 0 #==> Execute #= 0,
   calculateScore(Y2, Y3, Execute, CurrentScore),
-  scheduleCourse(T, L2, RestOfSchedule, NewScore),
+  scheduleCourse(T, L2, RestOfSchedule, RestOfGroups),
   Score #= NewScore + CurrentScore,
   parseSchedule(H, Y1, [X1, X2], LectureSchedule, 'Lecture'),
   parseSchedule(H, Y2, [X3, X4], TutorialSchedule, 'Tutorial'),
-  parseSchedule(H, Y3, [X5, X6], LabSchedule, 'Lab'),
+  parseSchedule(H, Y2, [X5, X6], LabSchedule, 'Lab'),
   flatten([LectureSchedule, TutorialSchedule, LabSchedule], CurrentSchedule),
   append(CurrentSchedule, RestOfSchedule, Schedule),
+  % print('Here'),
+  % nl,
+  append([Y2], RestOfGroups, Groups),
   append(L1, L2, L).
 
-scheduleCourses(L, Schedule, TotalGaps, Difference):-
-  scheduleCourse([1 , 2, 3], L1, Schedule, Score),
+scheduleCourses(L, Schedule, TotalGaps, Score ,Difference, Groups):-
+  scheduleCourse([1, 2, 3, 4], L1, Schedule, Groups),
   delete(L1, 0, L),
   all_different(L),
-  countGaps(1, L, TotalGaps),
+  countUniqueGroups(Groups, Score),
+  append(L, Groups, ToBeLabeled),
+  % countGaps(1, L, TotalGaps),
   differenceBetweenStartAndFinish(L, Difference),
-  labeling([min(TotalGaps), min(Score), min(Difference)], L).
+  labeling([max(Score), min(Difference)], ToBeLabeled).
+  % print(L),
+
 %  findall(L, labeling([min(Score)], L), L2),
 %  print(L2).
 
@@ -172,22 +184,43 @@ countGaps(31, _, 0).
 
 countGaps(Slot, Schedule, TotalGaps):-
   Slot #< 31,
-  element(_, Schedule, Slot),
-  NewSlot #= Slot + 1,
-  countGaps(NewSlot, Schedule, TotalGaps).
-
-countGaps(Slot, Schedule, TotalGaps):-
-  Slot #< 31,
-  \+element(_, Schedule, Slot),
+  element(_, Schedule, AnySlot),
+  print(AnySlot),
+  nl,
+  print(Slot),
+  nl,
+  print(Schedule),
+  nl,
   Start #= ((Slot // 5) * 5) + 1,
   Finish #= ((Slot // 5) + 1) * 5,
   RightBefore #= Slot - 1,
   RightAfter #= Slot + 1,
   findASlotBetween(Start, RightBefore, Schedule, Res1),
   findASlotBetween(RightAfter, Finish, Schedule, Res2),
-  Res1 #= 1 #/\ Res2 #= 1 #==> TotalGaps #= RestOfGaps + 1,
-  Res1 #\= 1 #\/ Res2 #\= 1 #==> TotalGaps #= RestOfGaps,
-  countGaps(RightAfter, Schedule, RestOfGaps).
+  (AnySlot #\= Slot #/\ Res1 #= 1 #/\ Res2 #= 0) #==> TotalGaps #= RestOfGaps,
+  (AnySlot #\= Slot #/\ Res1 #= 0 #/\ Res2 #= 1) #==> TotalGaps #= RestOfGaps,
+  (AnySlot #\= Slot #/\ Res1 #= 0 #/\ Res2 #= 0) #==> TotalGaps #= RestOfGaps,
+  (AnySlot #\= Slot #/\ Res1 #= 1 #/\ Res2 #= 1) #==> TotalGaps #= RestOfGaps + 1,
+  AnySlot #= Slot  #==> TotalGaps #= RestOfGaps,
+  NewSlot #= Slot + 1,
+  countGaps(NewSlot, Schedule, RestOfGaps).
+
+% countGaps(Slot, Schedule, TotalGaps):-
+%   Slot #< 31,
+%   \+element(_, Schedule, Slot),
+%   print(Slot),
+%   nl,
+%   print(Schedule),
+%   nl,
+%   Start #= ((Slot // 5) * 5) + 1,
+%   Finish #= ((Slot // 5) + 1) * 5,
+%   RightBefore #= Slot - 1,
+%   RightAfter #= Slot + 1,
+%   findASlotBetween(Start, RightBefore, Schedule, Res1),
+%   findASlotBetween(RightAfter, Finish, Schedule, Res2),
+%   Res1 #= 1 #/\ Res2 #= 1 #==> TotalGaps #= RestOfGaps + 1,
+%   Res1 #\= 1 #\/ Res2 #\= 1 #==> TotalGaps #= RestOfGaps,
+%   countGaps(RightAfter, Schedule, RestOfGaps).
 
 findASlotBetween(Current, Max, _, 0):-
   Current #> Max.
@@ -230,6 +263,20 @@ findMax([H|T], Current, Best):-
   Current #< H,
   findMax(T, H, Best).
 
+countUniqueGroups([], 0).
+
+countUniqueGroups([H|T], Res):-
+  countUniqueHelper(H, T, CurrentCount),
+  countUniqueGroups(T, RestOfRes),
+  Res #= CurrentCount + RestOfRes.
+
+countUniqueHelper(_, [], 0).
+
+countUniqueHelper(A, [H|T], Res):-
+  countUniqueHelper(A, T, RestOfRes),
+  A #= H #==> Res #= RestOfRes + 1,
+  A #\= H #==> Res #= RestOfRes.
+
 
 %%%%%% Server Perdicates
 
@@ -237,8 +284,8 @@ handle_api(Request) :-
         % http_read_json_dict(Request, Query),
         format('Content-type: text/plain~n~n'),
         % print(Request),
-        consult(kb),
-        scheduleCourses(L, Schedule, TotalGaps, Difference),
+        consult(kb1),
+        scheduleCourses(L, Schedule, TotalGaps, Score, Difference),
         % print(Schedule),
         % prolog_to_json(Schedule, X),
         convertScheduleToJSON(Schedule, X),
