@@ -111,8 +111,8 @@ scheduleCourses(CollectiveList, BestConfig):-
     CollectiveList).
   % print(L),
 
-oldSchedule(L, Schedule, Difference, Score):-
-  scheduleCourse([1,2,3], L1, Schedule, Groups, LectureGroup),
+oldSchedule(Schedule, BestConfig):-
+  scheduleCourse(BestConfig, L1, Schedule, Groups, LectureGroup),
   delete(L1, 0, L),
   all_different(L),
   countUniqueGroups(Groups, Score),
@@ -125,7 +125,14 @@ oldSchedule(L, Schedule, Difference, Score):-
 %  print(TotalGaps),
 %  print(L),
   differenceBetweenStartAndFinish(L, Difference),
-  labeling([ff, max(Score), min(Difference)], FinalLabeling).
+  labeling([ff, max(Score), min(Difference)], FinalLabeling),
+  ( countDaysOff(L, 1, 5) ;
+    countDaysOff(L, 6, 10) ;
+    countDaysOff(L, 11, 15) ;
+    countDaysOff(L, 16, 20) ;
+    countDaysOff(L, 21, 25) ;
+    countDaysOff(L, 26, 30)
+  ).
 
 
 generateBooleanSchedule(_, [], 31).
@@ -465,7 +472,7 @@ handle_api(Request) :-
         % scheduleCourses(L, Schedule, TotalGaps, Score ,Difference, Groups),
         % print(Schedule),
         % prolog_to_json(Schedule, X),
-        oldSchedule(_, Schedule, _, _),
+        oldSchedule(Schedule, BestConfig),
         convertScheduleToJSON(Schedule, X),
         reply_json_dict(X).
 

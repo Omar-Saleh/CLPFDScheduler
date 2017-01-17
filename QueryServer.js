@@ -21,19 +21,19 @@ app.post('/uploadSchedule', upload.single('myfile'), function(req, res) {
   console.log('Here######');
   console.dir(req.file);
   // fireUp(req.file.path, res);
-  list = [
-  "slot(1,'Lecture',9,_1902)",
-  "slot(1,'Tutorial',11,7)",
-  "slot(1,'Lab',28,7)",
-  "slot(2,'Lecture',23,2)",
-  "slot(2,'Tutorial',18,16)",
-  "slot(2,'Lab',19,16)",
-  "slot(3,'Lecture',26,2)",
-  "slot(3,'Tutorial',22,16)",
-  "slot(3,'Lab',25,16)",
-  "slot(4,'Lab',13,1)",
-  "slot(4,'Lab',14,1)"
-];
+//   list = [
+//   "slot(1,'Lecture',9,_1902)",
+//   "slot(1,'Tutorial',11,7)",
+//   "slot(1,'Lab',28,7)",
+//   "slot(2,'Lecture',23,2)",
+//   "slot(2,'Tutorial',18,16)",
+//   "slot(2,'Lab',19,16)",
+//   "slot(3,'Lecture',26,2)",
+//   "slot(3,'Tutorial',22,16)",
+//   "slot(3,'Lab',25,16)",
+//   "slot(4,'Lab',13,1)",
+//   "slot(4,'Lab',14,1)"
+// ];
   fireUp(req.file['path'], res);
 });
 
@@ -41,7 +41,12 @@ app.post('/uploadSchedule', upload.single('myfile'), function(req, res) {
 
 
 function myMethod(res) {
-  console.log(courseMapReversed);
+  // console.log(courseMapReversed);
+  // console.log(JSON.parse(list));
+  console.log('-----');
+  console.log(list[0]);
+  console.log('-----');
+  console.log(list[1]);
   var toBeSent = []
   for(var i = 0; i < list.length; i++)
   {
@@ -394,6 +399,8 @@ callback = function(response) {
   //the whole response has been recieved, so we just print it out here
   response.on('end', function () {
       console.log('Here!!!!!');
+      list = JSON.parse(str);
+      // console.log(str);
       myMethod(res);
     });
   }
