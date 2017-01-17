@@ -1,0 +1,1057 @@
+course_code,scd_type,day,slot,type,course_name,group
+CSEN 102,Engineering 1st Semester I,4,2,Lab,Introduction to computer science,1E P01
+CSEN 102,Engineering 1st Semester I,4,3,Lab,Introduction to computer science,1E P02
+CSEN 102,Engineering 1st Semester I,4,2,Lab,Introduction to computer science,1E P03
+CSEN 102,Engineering 1st Semester I,4,3,Lab,Introduction to computer science,1E P04
+CSEN 102,Engineering 1st Semester I,4,3,Lab,Introduction to computer science,1E P05
+CSEN 102,Engineering 1st Semester II,6,3,Lab,Introduction to computer science,1E P06
+CSEN 102,Engineering 1st Semester II,6,3,Lab,Introduction to computer science,1E P07
+CSEN 102,Engineering 1st Semester II,3,2,Lab,Introduction to computer science,1E P08
+CSEN 102,Engineering 1st Semester II,3,2,Lab,Introduction to computer science,1E P09
+CSEN 102,Engineering 1st Semester III,5,4,Lab,Introduction to computer science,1E P10
+CSEN 102,Engineering 1st Semester III,3,4,Lab,Introduction to computer science,1E P11
+CSEN 102,Engineering 1st Semester III,3,4,Lab,Introduction to computer science,1E P12
+CSEN 102,Engineering 1st Semester III,4,5,Lab,Introduction to computer science,1E P13
+CSEN 102,Engineering 1st Semester III,4,5,Lab,Introduction to computer science,1E P14
+CSEN 102,Engineering 1st Semester IV,3,4,Lab,Introduction to computer science,1E P15
+CSEN 102,Engineering 1st Semester IV,5,4,Lab,Introduction to computer science,1E P16
+CSEN 102,Engineering 1st Semester IV,5,4,Lab,Introduction to computer science,1E P17
+CSEN 102,Engineering 1st Semester IV,5,4,Lab,Introduction to computer science,1E P18
+CSEN 102,Engineering 1st Semester V,5,2,Lab,Introduction to computer science,1E P19
+CSEN 102,Engineering 1st Semester V,5,2,Lab,Introduction to computer science,1E P20
+CSEN 102,Engineering 1st Semester V,5,2,Lab,Introduction to computer science,1E P21
+CSEN 102,Engineering 1st Semester V,6,2,Lab,Introduction to computer science,1E P22
+CSEN 102,Engineering 1st Semester V,2,2,Lab,Introduction to computer science,1E P23
+CSEN 102,Engineering 1st Semester VI,6,2,Lab,Introduction to computer science,1E P24
+CSEN 102,Engineering 1st Semester VI,6,2,Lab,Introduction to computer science,1E P25
+CSEN 102,Engineering 1st Semester VI,2,2,Lab,Introduction to computer science,1E P26
+CSEN 102,Engineering 1st Semester VI,2,5,Lab,Introduction to computer science,1E P27
+CSEN 102,Engineering 1st Semester VII,5,3,Lab,Introduction to computer science,1E P28
+CSEN 102,Engineering 1st Semester VII,5,3,Lab,Introduction to computer science,1E P29
+CSEN 102,Engineering 1st Semester VII,1,2,Lab,Introduction to computer science,1E P30
+CSEN 102,Engineering 1st Semester VII,1,2,Lab,Introduction to computer science,1E P31
+CSEN 102,Engineering 1st Semester VII,1,2,Lab,Introduction to computer science,1E P32
+CSEN 102,Engineering 1st Semester VIII,6,4,Lab,Introduction to computer science,1E P33
+CSEN 102,Engineering 1st Semester VIII,6,4,Lab,Introduction to computer science,1E P34
+CSEN 102,Engineering 1st Semester VIII,5,1,Lab,Introduction to computer science,1E P35
+CSEN 102,Engineering 1st Semester VIII,5,3,Lab,Introduction to computer science,1E P36
+CSEN 102,Engineering 1st Semester IX,2,3,Lab,Introduction to computer science,1E P37
+CSEN 102,Engineering 1st Semester IX,5,1,Lab,Introduction to computer science,1E P38
+CSEN 102,Engineering 1st Semester IX,5,1,Lab,Introduction to computer science,1E P39
+CSEN 102,Engineering 1st Semester IX,5,1,Lab,Introduction to computer science,1E P40
+CSEN 102,Engineering 1st Semester IX,2,4,Lab,Introduction to computer science,1E P41
+CSEN 102,Engineering 1st Semester X,6,5,Lab,Introduction to computer science,1E P42
+CSEN 102,Engineering 1st Semester X,6,5,Lab,Introduction to computer science,1E P43
+CSEN 102,Engineering 1st Semester X,2,3,Lab,Introduction to computer science,1E P44
+CSEN 102,Engineering 1st Semester X,2,3,Lab,Introduction to computer science,1E P45
+CSEN 301,IET & MET 3rd Semester I,6,4,Lab,Data structures and Algorithms,3IET/MET P01
+ELCT 301,IET & MET 3rd Semester I,6,5,Lab,Electrical Circuits I,3IET/MET P01
+PHYSp 301,IET & MET 3rd Semester I,2,4,Lab,Physics III (P),3IET/MET P01
+PHYSp 301,IET & MET 3rd Semester I,2,5,Lab,Physics III (P),3IET/MET P01
+PHYSp 301,IET & MET 3rd Semester I,2,5,Lab,Physics III (P),3IET/MET P02
+PHYSp 301,IET & MET 3rd Semester I,2,4,Lab,Physics III (P),3IET/MET P02
+ELCT 301,IET & MET 3rd Semester I,6,5,Lab,Electrical Circuits I,3IET/MET P02
+CSEN 301,IET & MET 3rd Semester I,6,4,Lab,Data structures and Algorithms,3IET/MET P02
+CSEN 301,IET & MET 3rd Semester I,6,4,Lab,Data structures and Algorithms,3IET/MET P03
+ELCT 301,IET & MET 3rd Semester I,4,1,Lab,Electrical Circuits I,3IET/MET P03
+PHYSp 301,IET & MET 3rd Semester I,3,3,Lab,Physics III (P),3IET/MET P03
+PHYSp 301,IET & MET 3rd Semester I,3,4,Lab,Physics III (P),3IET/MET P03
+PHYSp 301,IET & MET 3rd Semester I,3,4,Lab,Physics III (P),3IET/MET P04
+PHYSp 301,IET & MET 3rd Semester I,3,3,Lab,Physics III (P),3IET/MET P04
+ELCT 301,IET & MET 3rd Semester I,4,1,Lab,Electrical Circuits I,3IET/MET P04
+CSEN 301,IET & MET 3rd Semester I,5,2,Lab,Data structures and Algorithms,3IET/MET P04
+CSEN 301,IET & MET 3rd Semester I,3,3,Lab,Data structures and Algorithms,3IET/MET P05
+ELCT 301,IET & MET 3rd Semester I,2,4,Lab,Electrical Circuits I,3IET/MET P05
+PHYSp 301,IET & MET 3rd Semester I,4,1,Lab,Physics III (P),3IET/MET P05
+PHYSp 301,IET & MET 3rd Semester I,4,2,Lab,Physics III (P),3IET/MET P05
+PHYSp 301,IET & MET 3rd Semester I,4,2,Lab,Physics III (P),3IET/MET P06
+PHYSp 301,IET & MET 3rd Semester I,4,1,Lab,Physics III (P),3IET/MET P06
+CSEN 301,IET & MET 3rd Semester I,6,5,Lab,Data structures and Algorithms,3IET/MET P06
+ELCT 301,IET & MET 3rd Semester I,2,5,Lab,Electrical Circuits I,3IET/MET P06
+CSEN 301,IET & MET 3rd Semester I,6,5,Lab,Data structures and Algorithms,3IET/MET P07
+ELCT 301,IET & MET 3rd Semester I,6,4,Lab,Electrical Circuits I,3IET/MET P07
+PHYSp 301,IET & MET 3rd Semester I,5,2,Lab,Physics III (P),3IET/MET P07
+PHYSp 301,IET & MET 3rd Semester I,5,3,Lab,Physics III (P),3IET/MET P07
+PHYSp 301,IET & MET 3rd Semester I,5,3,Lab,Physics III (P),3IET/MET P08
+PHYSp 301,IET & MET 3rd Semester I,5,2,Lab,Physics III (P),3IET/MET P08
+ELCT 301,IET & MET 3rd Semester I,6,4,Lab,Electrical Circuits I,3IET/MET P08
+CSEN 301,IET & MET 3rd Semester I,6,5,Lab,Data structures and Algorithms,3IET/MET P08
+CSEN 301,IET & MET 3rd Semester I,3,3,Lab,Data structures and Algorithms,3IET/MET P09
+ELCT 301,IET & MET 3rd Semester I,4,2,Lab,Electrical Circuits I,3IET/MET P09
+PHYSp 301,IET & MET 3rd Semester I,6,5,Lab,Physics III (P),3IET/MET P09
+PHYSp 301,IET & MET 3rd Semester I,6,4,Lab,Physics III (P),3IET/MET P09
+PHYSp 301,IET & MET 3rd Semester I,6,4,Lab,Physics III (P),3IET/MET P10
+PHYSp 301,IET & MET 3rd Semester I,6,5,Lab,Physics III (P),3IET/MET P10
+CSEN 301,IET & MET 3rd Semester I,3,4,Lab,Data structures and Algorithms,3IET/MET P10
+ELCT 301,IET & MET 3rd Semester I,2,4,Lab,Electrical Circuits I,3IET/MET P10
+PHYSp 301,IET & MET 3rd Semester II,2,2,Lab,Physics III (P),3IET/MET P11
+PHYSp 301,IET & MET 3rd Semester II,2,3,Lab,Physics III (P),3IET/MET P11
+ELCT 301,IET & MET 3rd Semester II,3,4,Lab,Electrical Circuits I,3IET/MET P11
+CSEN 301,IET & MET 3rd Semester II,6,3,Lab,Data structures and Algorithms,3IET/MET P11
+CSEN 301,IET & MET 3rd Semester II,6,3,Lab,Data structures and Algorithms,3IET/MET P12
+ELCT 301,IET & MET 3rd Semester II,3,4,Lab,Electrical Circuits I,3IET/MET P12
+PHYSp 301,IET & MET 3rd Semester II,4,3,Lab,Physics III (P),3IET/MET P12
+PHYSp 301,IET & MET 3rd Semester II,4,4,Lab,Physics III (P),3IET/MET P12
+PHYSp 301,IET & MET 3rd Semester II,4,4,Lab,Physics III (P),3IET/MET P13
+PHYSp 301,IET & MET 3rd Semester II,4,3,Lab,Physics III (P),3IET/MET P13
+ELCT 301,IET & MET 3rd Semester II,5,5,Lab,Electrical Circuits I,3IET/MET P13
+CSEN 301,IET & MET 3rd Semester II,2,3,Lab,Data structures and Algorithms,3IET/MET P13
+CSEN 301,IET & MET 3rd Semester II,4,3,Lab,Data structures and Algorithms,3IET/MET P14
+ELCT 301,IET & MET 3rd Semester II,4,4,Lab,Electrical Circuits I,3IET/MET P14
+PHYSp 301,IET & MET 3rd Semester II,5,4,Lab,Physics III (P),3IET/MET P14
+PHYSp 301,IET & MET 3rd Semester II,5,5,Lab,Physics III (P),3IET/MET P14
+PHYSp 301,IET & MET 3rd Semester II,5,4,Lab,Physics III (P),3IET/MET P15
+PHYSp 301,IET & MET 3rd Semester II,5,5,Lab,Physics III (P),3IET/MET P15
+ELCT 301,IET & MET 3rd Semester II,5,2,Lab,Electrical Circuits I,3IET/MET P15
+CSEN 301,IET & MET 3rd Semester II,3,4,Lab,Data structures and Algorithms,3IET/MET P15
+CSEN 301,IET & MET 3rd Semester II,4,4,Lab,Data structures and Algorithms,3IET/MET P16
+ELCT 301,IET & MET 3rd Semester II,5,5,Lab,Electrical Circuits I,3IET/MET P16
+PHYSp 301,IET & MET 3rd Semester II,6,2,Lab,Physics III (P),3IET/MET P16
+PHYSp 301,IET & MET 3rd Semester II,6,3,Lab,Physics III (P),3IET/MET P16
+PHYSp 301,IET & MET 3rd Semester II,6,3,Lab,Physics III (P),3IET/MET P17
+PHYSp 301,IET & MET 3rd Semester II,6,2,Lab,Physics III (P),3IET/MET P17
+ELCT 301,IET & MET 3rd Semester II,4,4,Lab,Electrical Circuits I,3IET/MET P17
+CSEN 301,IET & MET 3rd Semester II,5,2,Lab,Data structures and Algorithms,3IET/MET P17
+CSEN 301,IET & MET 3rd Semester II,5,5,Lab,Data structures and Algorithms,3IET/MET P18
+ELCT 301,IET & MET 3rd Semester II,5,2,Lab,Electrical Circuits I,3IET/MET P18
+PHYSp 301,IET & MET 3rd Semester II,2,2,Lab,Physics III (P),3IET/MET P18
+PHYSp 301,IET & MET 3rd Semester II,2,3,Lab,Physics III (P),3IET/MET P18
+PHYSp 301,IET & MET 3rd Semester II,2,2,Lab,Physics III (P),3IET/MET P19
+PHYSp 301,IET & MET 3rd Semester II,2,3,Lab,Physics III (P),3IET/MET P19
+ELCT 301,IET & MET 3rd Semester II,5,4,Lab,Electrical Circuits I,3IET/MET P19
+CSEN 301,IET & MET 3rd Semester II,5,2,Lab,Data structures and Algorithms,3IET/MET P19
+CSEN 501,MET Computer Science 5th Semester I,6,4,Lab,Data Base I,5CSEN P10
+CSEN 501,MET Computer Science 5th Semester I,2,4,Lab,Data Base I,5CSEN P11
+CSEN 501,MET Computer Science 5th Semester I,3,4,Lab,Data Base I,5CSEN P12
+CSEN 501,MET Computer Science 5th Semester I,3,2,Lab,Data Base I,5CSEN P13
+CSEN 501,MET Computer Science 5th Semester I,2,4,Lab,Data Base I,5CSEN P14
+CSEN 501,MET Computer Science 5th Semester II,2,2,Lab,Data Base I,5CSEN P15
+CSEN 501,MET Computer Science 5th Semester II,6,3,Lab,Data Base I,5CSEN P16
+CSEN 501,MET Computer Science 5th Semester II,2,1,Lab,Data Base I,5CSEN P17
+CSEN 501,MET Computer Science 5th Semester II,3,3,Lab,Data Base I,5CSEN P18
+CSEN 501,MET Computer Science 5th Semester II,2,2,Lab,Data Base I,5CSEN P19
+CSEN 501,MET Digital Media Engineering 5th Semester I,3,1,Lab,Data Base I,5DMET P20
+DMET 502,MET Digital Media Engineering 5th Semester I,3,4,Lab,Computer Graphics,5DMET P20
+DMET 502,MET Computer Science 7th Semester I,6,2,Lab,Computer Graphics,7CSEN P10
+CSEN 704,MET Computer Science 7th Semester I,5,4,Lab,Advanced Computer lab,7CSEN P10
+CSEN 704,MET Computer Science 7th Semester I,5,5,Lab,Advanced Computer lab,7CSEN P10
+CSEN 704,MET Computer Science 7th Semester I,6,1,Lab,Advanced Computer lab,7CSEN P11
+CSEN 704,MET Computer Science 7th Semester I,6,2,Lab,Advanced Computer lab,7CSEN P11
+DMET 502,MET Computer Science 7th Semester I,4,4,Lab,Computer Graphics,7CSEN P11
+DMET 502,MET Computer Science 7th Semester I,4,3,Lab,Computer Graphics,7CSEN P12
+CSEN 704,MET Computer Science 7th Semester I,6,4,Lab,Advanced Computer lab,7CSEN P12
+CSEN 704,MET Computer Science 7th Semester I,6,5,Lab,Advanced Computer lab,7CSEN P12
+CSEN 704,MET Computer Science 7th Semester I,5,1,Lab,Advanced Computer lab,7CSEN P13
+CSEN 704,MET Computer Science 7th Semester I,5,2,Lab,Advanced Computer lab,7CSEN P13
+DMET 502,MET Computer Science 7th Semester I,4,4,Lab,Computer Graphics,7CSEN P13
+DMET 502,MET Computer Science 7th Semester I,6,1,Lab,Computer Graphics,7CSEN P14
+CSEN 704,MET Computer Science 7th Semester I,5,4,Lab,Advanced Computer lab,7CSEN P14
+CSEN 704,MET Computer Science 7th Semester I,5,5,Lab,Advanced Computer lab,7CSEN P14
+CSEN 704,MET Computer Science 7th Semester I,1,1,Lab,Advanced Computer lab,7CSEN P15
+CSEN 704,MET Computer Science 7th Semester I,1,2,Lab,Advanced Computer lab,7CSEN P15
+DMET 502,MET Computer Science 7th Semester I,6,4,Lab,Computer Graphics,7CSEN P15
+DMET 706,MET Digital Media Engineering 7th Semester I,4,1,Lab,Advanced Media Lab,7DMET P17
+DMET 706,MET Digital Media Engineering 7th Semester I,4,2,Lab,Advanced Media Lab,7DMET P17
+DMET 702,MET Digital Media Engineering 7th Semester I,6,1,Lab,Visualization and Animation,7DMET P17
+DMET 702,MET Digital Media Engineering 7th Semester I,5,1,Lab,Visualization and Animation,7DMET P18
+DMET 706,MET Digital Media Engineering 7th Semester I,1,2,Lab,Advanced Media Lab,7DMET P18
+DMET 706,MET Digital Media Engineering 7th Semester I,1,3,Lab,Advanced Media Lab,7DMET P18
+CSEN 903,MET Computer Science 9th Semester I,2,1,Lab,Advanced Computer lab,9CSEN P08
+CSEN 903,MET Computer Science 9th Semester I,2,2,Lab,Advanced Computer lab,9CSEN P08
+CSEN 903,MET Computer Science 9th Semester I,1,1,Lab,Advanced Computer lab,9CSEN P09
+CSEN 903,MET Computer Science 9th Semester I,1,2,Lab,Advanced Computer lab,9CSEN P09
+CSEN 903,MET Computer Science 9th Semester I,1,4,Lab,Advanced Computer lab,9CSEN P10
+CSEN 903,MET Computer Science 9th Semester I,1,5,Lab,Advanced Computer lab,9CSEN P10
+CSEN 903,MET Computer Science 9th Semester I,3,3,Lab,Advanced Computer lab,9CSEN P11
+CSEN 903,MET Computer Science 9th Semester I,3,4,Lab,Advanced Computer lab,9CSEN P11
+CSEN 903,MET Computer Science 9th Semester I,2,4,Lab,Advanced Computer lab,9CSEN P12
+CSEN 903,MET Computer Science 9th Semester I,2,5,Lab,Advanced Computer lab,9CSEN P12
+DMET 904,MET Digital Media Engineering 9th Semester I,3,1,Lab,Advanced Media Lab,9DMET P13
+DMET 904,MET Digital Media Engineering 9th Semester I,3,2,Lab,Advanced Media Lab,9DMET P13
+DMET 904,MET Digital Media Engineering 9th Semester I,4,3,Lab,Advanced Media Lab,9DMET P14
+DMET 904,MET Digital Media Engineering 9th Semester I,4,4,Lab,Advanced Media Lab,9DMET P14
+CSEN 909,MET Computer Science 9th Semester I,3,2,Lab,Human Computer Interaction,EL P01
+CSEN 909,MET Computer Science 9th Semester I,3,1,Lab,Human Computer Interaction,EL P02
+CSEN 909,MET Digital Media Engineering 9th Semester I,1,1,Lab,Human Computer Interaction,EL P03
+CSEN 501,MET Computer Science 5th Semester I,6,3,Lecture,Data Base I,CSEN L01
+CSEN 702,MET Computer Science 7th Semester I,1,4,Lecture,Microprocessors,CSEN L01
+CSEN 702,MET Computer Science 7th Semester I,1,5,Lecture,Microprocessors,CSEN L01
+CSEN 703,MET Computer Science 7th Semester I,4,1,Lecture,Analysis and Design of Algorithms,CSEN L01
+CSEN 502,MET Computer Science 5th Semester I,1,3,Lecture,Theory of Computation,CSEN L01
+CSEN 605,MET Computer Science 5th Semester I,2,1,Lecture,Digital System Design ,CSEN L01
+MATH 501,MET Computer Science 5th Semester I,2,2,Lecture,Mathematics V (Discrete Math),CSEN L01
+DMET 502,MET Computer Science 7th Semester I,1,3,Lecture,Computer Graphics,CSEN L01
+CSEN 503,MET Computer Science 5th Semester I,3,3,Lecture,Introduction To Communication Networks,CSEN L01
+CSEN 701,MET Computer Science 7th Semester I,6,3,Lecture,Embedded System Architecture ,CSEN L01
+CSEN 701,MET Computer Science 7th Semester I,5,3,Lecture,Embedded System Architecture ,CSEN L01
+DMET 501,MET Computer Science 5th Semester I,1,2,Lecture,Introduction to media Engineering,CSEN L01
+CSEN 502,MET Computer Science 5th Semester I,3,1,Lecture,Theory of Computation,CSEN L01
+DMET 901,MET Computer Science 9th Semester I,4,2,Lecture,Computer Vision,CSEN L01
+CSEN 901,MET Computer Science 9th Semester I,6,4,Lecture,Artificial Intelligence,CSEN L01
+MATH 501,MET Computer Science 5th Semester II,2,3,Lecture,Mathematics V (Discrete Math),CSEN L02
+DMET 501,MET Computer Science 5th Semester II,1,1,Lecture,Introduction to media Engineering,CSEN L02
+CSEN 502,MET Computer Science 5th Semester II,1,3,Lecture,Theory of Computation,CSEN L02
+CSEN 503,MET Computer Science 5th Semester II,6,2,Lecture,Introduction To Communication Networks,CSEN L02
+CSEN 501,MET Computer Science 5th Semester II,6,4,Lecture,Data Base I,CSEN L02
+CSEN 502,MET Computer Science 5th Semester II,3,1,Lecture,Theory of Computation,CSEN L02
+CSEN 605,MET Computer Science 5th Semester II,3,2,Lecture,Digital System Design ,CSEN L02
+DMET 1042,MET Digital Media Engineering 9th Semester I,3,3,Lecture,Fundamentals of VoIP,DMET L01
+DMET 1042,MET Digital Media Engineering 9th Semester I,3,4,Lecture,Fundamentals of VoIP,DMET L01
+DMET 703,MET Digital Media Engineering 7th Semester I,1,4,Lecture,Video and Audio Technology,DMET L01
+DMET 702,MET Digital Media Engineering 7th Semester I,1,5,Lecture,Visualization and Animation,DMET L01
+DMET 704,MET Digital Media Engineering 7th Semester I,4,3,Lecture,Multimedia and Networking,DMET L01
+CSEN 701,MET Digital Media Engineering 7th Semester I,5,3,Lecture,Embedded System Architecture ,DMET L01
+DMET 702,MET Digital Media Engineering 7th Semester I,5,2,Lecture,Visualization and Animation,DMET L01
+CSEN 701,MET Digital Media Engineering 7th Semester I,5,4,Lecture,Embedded System Architecture ,DMET L01
+CSEN 503,MET Digital Media Engineering 5th Semester I,6,2,Lecture,Introduction To Communication Networks,DMET L01
+CSEN 501,MET Digital Media Engineering 5th Semester I,6,4,Lecture,Data Base I,DMET L01
+CSEN 605,MET Digital Media Engineering 5th Semester I,3,2,Lecture,Digital System Design ,DMET L01
+DMET 501,MET Digital Media Engineering 5th Semester I,1,1,Lecture,Introduction to media Engineering,DMET L01
+DMET 502,MET Digital Media Engineering 5th Semester I,6,3,Lecture,Computer Graphics,DMET L01
+MATH 501,MET Digital Media Engineering 5th Semester I,2,3,Lecture,Mathematics V (Discrete Math),DMET L01
+DMET 902,MET Digital Media Engineering 9th Semester I,2,1,Lecture,Advanced Video Processing,DMET L01
+DMET 901,MET Digital Media Engineering 9th Semester I,4,2,Lecture,Computer Vision,DMET L01
+CSEN 102,Engineering 1st Semester I,2,4,Lecture,Introduction to computer science,E L01
+MATH 103,Engineering 1st Semester I,3,4,Lecture,Maths,E L01
+PHYS 101,Engineering 1st Semester I,2,3,Lecture,Physics,E L01
+EDPT 201,Engineering 1st Semester I,2,3,Lecture,Production Technology,E L01
+MATH 103,Engineering 1st Semester I,6,2,Lecture,Maths,E L01
+CHEMt 102,Engineering 1st Semester I,6,1,Lecture,Chemistry,E L01
+PHYS 101,Engineering 1st Semester I,4,4,Lecture,Physics,E L01
+ELCT 201,IET & MET 3rd Semester I,2,2,Lecture,Digital Logic Design,E L01
+PHYSt 301,IET & MET 3rd Semester I,2,3,Lecture,Physics III (t),E L01
+MATH 301,IET & MET 3rd Semester I,3,2,Lecture,Mathematics III,E L01
+MATH 301,IET & MET 3rd Semester I,4,3,Lecture,Mathematics III,E L01
+PHYSt 301,IET & MET 3rd Semester I,4,4,Lecture,Physics III (t),E L01
+CSEN 301,IET & MET 3rd Semester I,5,4,Lecture,Data structures and Algorithms,E L01
+ELCT 301,IET & MET 3rd Semester I,6,2,Lecture,Electrical Circuits I,E L01
+ELCT 201,IET & MET 3rd Semester II,2,1,Lecture,Digital Logic Design,E L02
+PHYSt 301,IET & MET 3rd Semester II,2,4,Lecture,Physics III (t),E L02
+MATH 301,IET & MET 3rd Semester II,3,1,Lecture,Mathematics III,E L02
+MATH 301,IET & MET 3rd Semester II,4,1,Lecture,Mathematics III,E L02
+PHYSt 301,IET & MET 3rd Semester II,4,2,Lecture,Physics III (t),E L02
+CSEN 301,IET & MET 3rd Semester II,5,3,Lecture,Data structures and Algorithms,E L02
+ELCT 301,IET & MET 3rd Semester II,6,1,Lecture,Electrical Circuits I,E L02
+PHYS 101,Engineering 1st Semester II,2,3,Lecture,Physics,E L02
+ENGD 301,Engineering 1st Semester II,2,3,Lecture,Engineering Drawing & Design,E L02
+CSEN 102,Engineering 1st Semester II,2,4,Lecture,Introduction to computer science,E L02
+PHYS 101,Engineering 1st Semester II,4,4,Lecture,Physics,E L02
+CHEMt 102,Engineering 1st Semester II,6,1,Lecture,Chemistry,E L02
+MATH 103,Engineering 1st Semester II,6,2,Lecture,Maths,E L02
+MATH 103,Engineering 1st Semester II,3,4,Lecture,Maths,E L02
+PHYS 101,Engineering 1st Semester III,1,4,Lecture,Physics,E L03
+EDPT 201,Engineering 1st Semester III,1,4,Lecture,Production Technology,E L03
+MATH 103,Engineering 1st Semester III,5,1,Lecture,Maths,E L03
+CSEN 102,Engineering 1st Semester III,5,2,Lecture,Introduction to computer science,E L03
+MATH 103,Engineering 1st Semester III,3,3,Lecture,Maths,E L03
+CHEMt 102,Engineering 1st Semester III,4,1,Lecture,Chemistry,E L03
+PHYS 101,Engineering 1st Semester III,4,2,Lecture,Physics,E L03
+MATH 103,Engineering 1st Semester IV,3,3,Lecture,Maths,E L04
+PHYS 101,Engineering 1st Semester IV,1,4,Lecture,Physics,E L04
+ENGD 301,Engineering 1st Semester IV,1,4,Lecture,Engineering Drawing & Design,E L04
+MATH 103,Engineering 1st Semester IV,5,1,Lecture,Maths,E L04
+CHEMt 102,Engineering 1st Semester IV,4,1,Lecture,Chemistry,E L04
+PHYS 101,Engineering 1st Semester IV,4,2,Lecture,Physics,E L04
+CSEN 102,Engineering 1st Semester IV,5,2,Lecture,Introduction to computer science,E L04
+MATH 103,Engineering 1st Semester V,1,2,Lecture,Maths,E L05
+PHYS 101,Engineering 1st Semester V,1,3,Lecture,Physics,E L05
+EDPT 201,Engineering 1st Semester V,1,3,Lecture,Production Technology,E L05
+CHEMt 102,Engineering 1st Semester V,2,4,Lecture,Chemistry,E L05
+CSEN 102,Engineering 1st Semester V,6,3,Lecture,Introduction to computer science,E L05
+MATH 103,Engineering 1st Semester V,6,1,Lecture,Maths,E L05
+PHYS 101,Engineering 1st Semester V,5,1,Lecture,Physics,E L05
+MATH 103,Engineering 1st Semester VI,1,2,Lecture,Maths,E L06
+PHYS 101,Engineering 1st Semester VI,1,3,Lecture,Physics,E L06
+ENGD 301,Engineering 1st Semester VI,1,3,Lecture,Engineering Drawing & Design,E L06
+CHEMt 102,Engineering 1st Semester VI,2,4,Lecture,Chemistry,E L06
+PHYS 101,Engineering 1st Semester VI,5,1,Lecture,Physics,E L06
+CSEN 102,Engineering 1st Semester VI,6,3,Lecture,Introduction to computer science,E L06
+MATH 103,Engineering 1st Semester VI,6,1,Lecture,Maths,E L06
+MATH 103,Engineering 1st Semester VII,5,2,Lecture,Maths,E L07
+CSEN 102,Engineering 1st Semester VII,6,2,Lecture,Introduction to computer science,E L07
+PHYS 101,Engineering 1st Semester VII,5,4,Lecture,Physics,E L07
+MATH 103,Engineering 1st Semester VII,1,4,Lecture,Maths,E L07
+CHEMt 102,Engineering 1st Semester VII,2,1,Lecture,Chemistry,E L07
+PHYS 101,Engineering 1st Semester VII,2,2,Lecture,Physics,E L07
+EDPT 201,Engineering 1st Semester VII,2,2,Lecture,Production Technology,E L07
+MATH 103,Engineering 1st Semester VIII,5,2,Lecture,Maths,E L08
+PHYS 101,Engineering 1st Semester VIII,5,4,Lecture,Physics,E L08
+MATH 103,Engineering 1st Semester VIII,1,4,Lecture,Maths,E L08
+CHEMt 102,Engineering 1st Semester VIII,2,1,Lecture,Chemistry,E L08
+PHYS 101,Engineering 1st Semester VIII,2,2,Lecture,Physics,E L08
+ENGD 301,Engineering 1st Semester VIII,2,2,Lecture,Engineering Drawing & Design,E L08
+CSEN 102,Engineering 1st Semester VIII,6,2,Lecture,Introduction to computer science,E L08
+MATH 103,Engineering 1st Semester IX,6,4,Lecture,Maths,E L09
+PHYS 101,Engineering 1st Semester IX,5,3,Lecture,Physics,E L09
+CHEMt 102,Engineering 1st Semester IX,6,2,Lecture,Chemistry,E L09
+CSEN 102,Engineering 1st Semester IX,2,1,Lecture,Introduction to computer science,E L09
+MATH 103,Engineering 1st Semester IX,1,1,Lecture,Maths,E L09
+PHYS 101,Engineering 1st Semester IX,1,2,Lecture,Physics,E L09
+EDPT 201,Engineering 1st Semester IX,1,2,Lecture,Production Technology,E L09
+CHEMt 102,Engineering 1st Semester X,6,2,Lecture,Chemistry,E L10
+PHYS 101,Engineering 1st Semester X,1,2,Lecture,Physics,E L10
+ENGD 301,Engineering 1st Semester X,1,2,Lecture,Engineering Drawing & Design,E L10
+MATH 103,Engineering 1st Semester X,1,1,Lecture,Maths,E L10
+MATH 103,Engineering 1st Semester X,6,4,Lecture,Maths,E L10
+PHYS 101,Engineering 1st Semester X,5,3,Lecture,Physics,E L10
+CSEN 102,Engineering 1st Semester X,2,1,Lecture,Introduction to computer science,E L10
+CSEN 1067,MET Computer Science 9th Semester I,6,1,Lecture,Machine Learning Algorithms,EL L01
+CSEN 1067,MET Digital Media Engineering 9th Semester I,6,1,Lecture,Machine Learning Algorithms,EL L01
+CSEN 906,MET Digital Media Engineering 9th Semester I,4,3,Lecture,Constraint Programming,EL L01
+MCTR 902,MET Digital Media Engineering 9th Semester I,4,4,Lecture,Robotics,EL L01
+CSEN 1066,MET Digital Media Engineering 9th Semester I,4,5,Lecture,Selected Topics in Modern Networks,EL L01
+CSEN 1066,MET Digital Media Engineering 9th Semester I,6,3,Lecture,Selected Topics in Modern Networks,EL L01
+CSEN 901,MET Digital Media Engineering 9th Semester I,6,4,Lecture,Artificial Intelligence,EL L01
+CSEN 909,MET Digital Media Engineering 9th Semester I,6,5,Lecture,Human Computer Interaction,EL L01
+MCTR 902,MET Computer Science 9th Semester I,4,4,Lecture,Robotics,EL L01
+CSEN 1066,MET Computer Science 9th Semester I,4,5,Lecture,Selected Topics in Modern Networks,EL L01
+CSEN 1066,MET Computer Science 9th Semester I,6,3,Lecture,Selected Topics in Modern Networks,EL L01
+NETW 1009,MET Digital Media Engineering 9th Semester I,2,3,Lecture,Cloud Computing (ISM),EL L01
+CSEN 909,MET Computer Science 9th Semester I,6,5,Lecture,Human Computer Interaction,EL L01
+CSEN 906,MET Computer Science 9th Semester I,4,3,Lecture,Constraint Programming,EL L01
+NETW 1009,MET Computer Science 9th Semester I,2,3,Lecture,Cloud Computing (ISM),EL L01
+CSEN 1067,MET Computer Science 9th Semester I,6,2,Lecture,Machine Learning Algorithms,EL L01
+CSEN 1067,MET Digital Media Engineering 9th Semester I,6,2,Lecture,Machine Learning Algorithms,EL L01
+AE 101,Engineering 1st Semester I,2,2,Tut,Introduction to Academic English (B),1 Eng I AE T37
+AE 101,Engineering 1st Semester I,4,5,Tut,Introduction to Academic English (B),1 Eng I AE T37
+AE 101,Engineering 1st Semester I,6,5,Tut,Introduction to Academic English (B),1 Eng I AE T37
+AE 101,Engineering 1st Semester I,2,2,Tut,Introduction to Academic English (B),1 Eng I AE T38
+AE 101,Engineering 1st Semester I,4,5,Tut,Introduction to Academic English (B),1 Eng I AE T38
+AE 101,Engineering 1st Semester I,6,5,Tut,Introduction to Academic English (B),1 Eng I AE T38
+AE 101,Engineering 1st Semester I,2,2,Tut,Introduction to Academic English (B),1 Eng I AE T39
+AE 101,Engineering 1st Semester I,4,5,Tut,Introduction to Academic English (B),1 Eng I AE T39
+AE 101,Engineering 1st Semester I,6,5,Tut,Introduction to Academic English (B),1 Eng I AE T39
+AE 101,Engineering 1st Semester I,2,2,Tut,Introduction to Academic English (B),1 Eng I AE T40
+AE 101,Engineering 1st Semester I,4,5,Tut,Introduction to Academic English (B),1 Eng I AE T40
+AE 101,Engineering 1st Semester I,6,5,Tut,Introduction to Academic English (B),1 Eng I AE T40
+AE 101,Engineering 1st Semester II,4,5,Tut,Introduction to Academic English (B),1 Eng II AE T41
+AE 101,Engineering 1st Semester II,6,5,Tut,Introduction to Academic English (B),1 Eng II AE T41
+AE 101,Engineering 1st Semester II,2,2,Tut,Introduction to Academic English (B),1 Eng II AE T41
+AE 101,Engineering 1st Semester II,2,2,Tut,Introduction to Academic English (B),1 Eng II AE T42
+AE 101,Engineering 1st Semester II,4,5,Tut,Introduction to Academic English (B),1 Eng II AE T42
+AE 101,Engineering 1st Semester II,6,5,Tut,Introduction to Academic English (B),1 Eng II AE T42
+AE 101,Engineering 1st Semester II,2,2,Tut,Introduction to Academic English (B),1 Eng II AE T43
+AE 101,Engineering 1st Semester II,4,5,Tut,Introduction to Academic English (B),1 Eng II AE T43
+AE 101,Engineering 1st Semester II,6,5,Tut,Introduction to Academic English (B),1 Eng II AE T43
+AE 101,Engineering 1st Semester II,2,2,Tut,Introduction to Academic English (B),1 Eng II AE T44
+AE 101,Engineering 1st Semester II,4,5,Tut,Introduction to Academic English (B),1 Eng II AE T44
+AE 101,Engineering 1st Semester II,6,5,Tut,Introduction to Academic English (B),1 Eng II AE T44
+AE 101,Engineering 1st Semester III,1,1,Tut,Introduction to Academic English (B),1 Eng III AE T45
+AE 101,Engineering 1st Semester III,3,1,Tut,Introduction to Academic English (B),1 Eng III AE T45
+AE 101,Engineering 1st Semester III,5,3,Tut,Introduction to Academic English (B),1 Eng III AE T45
+AE 101,Engineering 1st Semester III,1,1,Tut,Introduction to Academic English (B),1 Eng III AE T46
+AE 101,Engineering 1st Semester III,5,3,Tut,Introduction to Academic English (B),1 Eng III AE T46
+AE 101,Engineering 1st Semester III,3,1,Tut,Introduction to Academic English (B),1 Eng III AE T46
+AE 101,Engineering 1st Semester III,1,1,Tut,Introduction to Academic English (B),1 Eng III AE T48
+AE 101,Engineering 1st Semester III,3,1,Tut,Introduction to Academic English (B),1 Eng III AE T48
+AE 101,Engineering 1st Semester III,5,3,Tut,Introduction to Academic English (B),1 Eng III AE T48
+AE 101,Engineering 1st Semester III,1,1,Tut,Introduction to Academic English (B),1 Eng III AE T49
+AE 101,Engineering 1st Semester III,3,1,Tut,Introduction to Academic English (B),1 Eng III AE T49
+AE 101,Engineering 1st Semester III,5,3,Tut,Introduction to Academic English (B),1 Eng III AE T49
+AS 102,Engineering 1st Semester III,1,1,Tut,English for Academic Purposes (A1),1 Eng III AS T64
+AS 102,Engineering 1st Semester III,5,3,Tut,English for Academic Purposes (A1),1 Eng III AS T64
+AE 101,Engineering 1st Semester IV,1,1,Tut,Introduction to Academic English (B),1 Eng IV AE  T50
+AE 101,Engineering 1st Semester IV,3,1,Tut,Introduction to Academic English (B),1 Eng IV AE  T50
+AE 101,Engineering 1st Semester IV,5,3,Tut,Introduction to Academic English (B),1 Eng IV AE  T50
+AE 101,Engineering 1st Semester IV,1,1,Tut,Introduction to Academic English (B),1 Eng IV AE  T51
+AE 101,Engineering 1st Semester IV,3,1,Tut,Introduction to Academic English (B),1 Eng IV AE  T51
+AE 101,Engineering 1st Semester IV,5,3,Tut,Introduction to Academic English (B),1 Eng IV AE  T51
+AE 101,Engineering 1st Semester IV,1,1,Tut,Introduction to Academic English (B),1 Eng IV AE  T52
+AE 101,Engineering 1st Semester IV,3,1,Tut,Introduction to Academic English (B),1 Eng IV AE  T52
+AE 101,Engineering 1st Semester IV,5,3,Tut,Introduction to Academic English (B),1 Eng IV AE  T52
+AE 101,Engineering 1st Semester IV,1,1,Tut,Introduction to Academic English (B),1 Eng IV AE  T53
+AE 101,Engineering 1st Semester IV,3,1,Tut,Introduction to Academic English (B),1 Eng IV AE  T53
+AE 101,Engineering 1st Semester IV,5,3,Tut,Introduction to Academic English (B),1 Eng IV AE  T53
+AS 102,Engineering 1st Semester IX,1,4,Tut,English for Academic Purposes (A1),1 Eng IX AS T55
+AS 102,Engineering 1st Semester IX,5,4,Tut,English for Academic Purposes (A1),1 Eng IX AS T55
+AS 102,Engineering 1st Semester IX,1,4,Tut,English for Academic Purposes (A1),1 Eng IX AS T56
+AS 102,Engineering 1st Semester IX,5,4,Tut,English for Academic Purposes (A1),1 Eng IX AS T56
+AS 102,Engineering 1st Semester IX,1,4,Tut,English for Academic Purposes (A1),1 Eng IX AS T57
+AS 102,Engineering 1st Semester IX,5,4,Tut,English for Academic Purposes (A1),1 Eng IX AS T57
+AS 102,Engineering 1st Semester IX,1,4,Tut,English for Academic Purposes (A1),1 Eng IX AS T58
+AS 102,Engineering 1st Semester IX,5,4,Tut,English for Academic Purposes (A1),1 Eng IX AS T58
+AS 102,Engineering 1st Semester IX,1,4,Tut,English for Academic Purposes (A1),1 Eng IX AS T59
+AS 102,Engineering 1st Semester IX,5,4,Tut,English for Academic Purposes (A1),1 Eng IX AS T59
+AE 101,Engineering 1st Semester V,2,3,Tut,Introduction to Academic English (B),1 Eng V AE T54
+AE 101,Engineering 1st Semester V,5,5,Tut,Introduction to Academic English (B),1 Eng V AE T54
+AE 101,Engineering 1st Semester V,6,4,Tut,Introduction to Academic English (B),1 Eng V AE T54
+AE 101,Engineering 1st Semester V,2,3,Tut,Introduction to Academic English (B),1 Eng V AE T55
+AE 101,Engineering 1st Semester V,5,5,Tut,Introduction to Academic English (B),1 Eng V AE T55
+AE 101,Engineering 1st Semester V,6,4,Tut,Introduction to Academic English (B),1 Eng V AE T55
+AE 101,Engineering 1st Semester V,2,3,Tut,Introduction to Academic English (B),1 Eng V AE T56
+AE 101,Engineering 1st Semester V,5,5,Tut,Introduction to Academic English (B),1 Eng V AE T56
+AE 101,Engineering 1st Semester V,6,4,Tut,Introduction to Academic English (B),1 Eng V AE T56
+AE 101,Engineering 1st Semester V,2,3,Tut,Introduction to Academic English (B),1 Eng V AE T57
+AE 101,Engineering 1st Semester V,5,5,Tut,Introduction to Academic English (B),1 Eng V AE T57
+AE 101,Engineering 1st Semester V,6,4,Tut,Introduction to Academic English (B),1 Eng V AE T57
+AS 102,Engineering 1st Semester V,2,3,Tut,English for Academic Purposes (A1),1 Eng V AS T65
+AS 102,Engineering 1st Semester V,6,4,Tut,English for Academic Purposes (A1),1 Eng V AS T65
+AS 102,Engineering 1st Semester VI,2,3,Tut,English for Academic Purposes (A1),1 Eng VI AS T42
+AS 102,Engineering 1st Semester VI,6,4,Tut,English for Academic Purposes (A1),1 Eng VI AS T42
+AS 102,Engineering 1st Semester VI,2,3,Tut,English for Academic Purposes (A1),1 Eng VI AS T43
+AS 102,Engineering 1st Semester VI,6,4,Tut,English for Academic Purposes (A1),1 Eng VI AS T43
+AS 102,Engineering 1st Semester VI,2,3,Tut,English for Academic Purposes (A1),1 Eng VI AS T44
+AS 102,Engineering 1st Semester VI,6,4,Tut,English for Academic Purposes (A1),1 Eng VI AS T44
+AS 102,Engineering 1st Semester VI,2,3,Tut,English for Academic Purposes (A1),1 Eng VI AS T45
+AS 102,Engineering 1st Semester VI,6,4,Tut,English for Academic Purposes (A1),1 Eng VI AS T45
+AS 102,Engineering 1st Semester VII,2,5,Tut,English for Academic Purposes (A1),1 Eng VII AS T46
+AS 102,Engineering 1st Semester VII,1,3,Tut,English for Academic Purposes (A1),1 Eng VII AS T46
+AS 102,Engineering 1st Semester VII,1,3,Tut,English for Academic Purposes (A1),1 Eng VII AS T47
+AS 102,Engineering 1st Semester VII,2,5,Tut,English for Academic Purposes (A1),1 Eng VII AS T47
+AS 102,Engineering 1st Semester VII,1,3,Tut,English for Academic Purposes (A1),1 Eng VII AS T48
+AS 102,Engineering 1st Semester VII,2,5,Tut,English for Academic Purposes (A1),1 Eng VII AS T48
+AS 102,Engineering 1st Semester VII,1,3,Tut,English for Academic Purposes (A1),1 Eng VII AS T49
+AS 102,Engineering 1st Semester VII,2,5,Tut,English for Academic Purposes (A1),1 Eng VII AS T49
+AS 102,Engineering 1st Semester VII,1,3,Tut,English for Academic Purposes (A1),1 Eng VII AS T50
+AS 102,Engineering 1st Semester VII,2,5,Tut,English for Academic Purposes (A1),1 Eng VII AS T50
+AS 102,Engineering 1st Semester VIII,1,3,Tut,English for Academic Purposes (A1),1 Eng VIII AS T51
+AS 102,Engineering 1st Semester VIII,2,5,Tut,English for Academic Purposes (A1),1 Eng VIII AS T51
+AS 102,Engineering 1st Semester VIII,1,3,Tut,English for Academic Purposes (A1),1 Eng VIII AS T52
+AS 102,Engineering 1st Semester VIII,2,5,Tut,English for Academic Purposes (A1),1 Eng VIII AS T52
+AS 102,Engineering 1st Semester VIII,1,3,Tut,English for Academic Purposes (A1),1 Eng VIII AS T53
+AS 102,Engineering 1st Semester VIII,2,5,Tut,English for Academic Purposes (A1),1 Eng VIII AS T53
+AS 102,Engineering 1st Semester VIII,1,3,Tut,English for Academic Purposes (A1),1 Eng VIII AS T54
+AS 102,Engineering 1st Semester VIII,2,5,Tut,English for Academic Purposes (A1),1 Eng VIII AS T54
+AS 102,Engineering 1st Semester X,1,4,Tut,English for Academic Purposes (A1),1 Eng X AS T60
+AS 102,Engineering 1st Semester X,5,4,Tut,English for Academic Purposes (A1),1 Eng X AS T60
+AS 102,Engineering 1st Semester X,1,4,Tut,English for Academic Purposes (A1),1 Eng X AS T61
+AS 102,Engineering 1st Semester X,5,4,Tut,English for Academic Purposes (A1),1 Eng X AS T61
+AS 102,Engineering 1st Semester X,1,4,Tut,English for Academic Purposes (A1),1 Eng X AS T62
+AS 102,Engineering 1st Semester X,5,4,Tut,English for Academic Purposes (A1),1 Eng X AS T62
+AS 102,Engineering 1st Semester X,1,4,Tut,English for Academic Purposes (A1),1 Eng X AS T63
+AS 102,Engineering 1st Semester X,5,4,Tut,English for Academic Purposes (A1),1 Eng X AS T63
+DE 101,Engineering 1st Semester I,2,1,Tut,Basic German 1,1E I+II 1G T01
+DE 101,Engineering 1st Semester I,6,4,Tut,Basic German 1,1E I+II 1G T01
+DE 101,Engineering 1st Semester I,6,4,Tut,Basic German 1,1E I+II 1G T02
+DE 101,Engineering 1st Semester I,2,1,Tut,Basic German 1,1E I+II 1G T02
+DE 101,Engineering 1st Semester I,2,1,Tut,Basic German 1,1E I+II 1G T03
+DE 101,Engineering 1st Semester I,6,4,Tut,Basic German 1,1E I+II 1G T03
+DE 101,Engineering 1st Semester I,6,4,Tut,Basic German 1,1E I+II 1G T04
+DE 101,Engineering 1st Semester I,2,1,Tut,Basic German 1,1E I+II 1G T04
+DE 101,Engineering 1st Semester II,2,1,Tut,Basic German 1,1E I+II 1G T05
+DE 101,Engineering 1st Semester II,6,4,Tut,Basic German 1,1E I+II 1G T05
+DE 101,Engineering 1st Semester II,6,4,Tut,Basic German 1,1E I+II 1G T06
+DE 101,Engineering 1st Semester II,2,1,Tut,Basic German 1,1E I+II 1G T06
+DE 101,Engineering 1st Semester II,2,1,Tut,Basic German 1,1E I+II 1G T07
+DE 101,Engineering 1st Semester II,6,4,Tut,Basic German 1,1E I+II 1G T07
+DE 101,Engineering 1st Semester II,6,4,Tut,Basic German 1,1E I+II 1G T08
+DE 101,Engineering 1st Semester II,2,1,Tut,Basic German 1,1E I+II 1G T08
+DE 101,Engineering 1st Semester III,1,2,Tut,Basic German 1,1E III+IV 1G T09
+DE 101,Engineering 1st Semester III,5,5,Tut,Basic German 1,1E III+IV 1G T09
+DE 101,Engineering 1st Semester III,5,5,Tut,Basic German 1,1E III+IV 1G T10
+DE 101,Engineering 1st Semester III,1,2,Tut,Basic German 1,1E III+IV 1G T10
+DE 101,Engineering 1st Semester III,1,2,Tut,Basic German 1,1E III+IV 1G T11
+DE 101,Engineering 1st Semester III,5,5,Tut,Basic German 1,1E III+IV 1G T11
+DE 101,Engineering 1st Semester III,5,5,Tut,Basic German 1,1E III+IV 1G T12
+DE 101,Engineering 1st Semester III,1,2,Tut,Basic German 1,1E III+IV 1G T12
+DE 101,Engineering 1st Semester III,1,2,Tut,Basic German 1,1E III+IV 1G T13
+DE 101,Engineering 1st Semester III,5,5,Tut,Basic German 1,1E III+IV 1G T13
+DE 101,Engineering 1st Semester IV,1,2,Tut,Basic German 1,1E III+IV 1G T14
+DE 101,Engineering 1st Semester IV,5,5,Tut,Basic German 1,1E III+IV 1G T14
+DE 101,Engineering 1st Semester IV,5,5,Tut,Basic German 1,1E III+IV 1G T15
+DE 101,Engineering 1st Semester IV,1,2,Tut,Basic German 1,1E III+IV 1G T15
+DE 101,Engineering 1st Semester IV,1,2,Tut,Basic German 1,1E III+IV 1G T16
+DE 101,Engineering 1st Semester IV,5,5,Tut,Basic German 1,1E III+IV 1G T16
+DE 101,Engineering 1st Semester IX,1,3,Tut,Basic German 1,1E IX+X 1G  T36
+DE 101,Engineering 1st Semester IX,5,2,Tut,Basic German 1,1E IX+X 1G  T36
+DE 101,Engineering 1st Semester IX,5,2,Tut,Basic German 1,1E IX+X 1G  T37
+DE 101,Engineering 1st Semester IX,1,3,Tut,Basic German 1,1E IX+X 1G  T37
+DE 101,Engineering 1st Semester IX,1,3,Tut,Basic German 1,1E IX+X 1G  T38
+DE 101,Engineering 1st Semester IX,5,2,Tut,Basic German 1,1E IX+X 1G  T38
+DE 101,Engineering 1st Semester IX,5,2,Tut,Basic German 1,1E IX+X 1G  T39
+DE 101,Engineering 1st Semester IX,1,3,Tut,Basic German 1,1E IX+X 1G  T39
+DE 101,Engineering 1st Semester IX,1,3,Tut,Basic German 1,1E IX+X 1G  T40
+DE 101,Engineering 1st Semester IX,5,2,Tut,Basic German 1,1E IX+X 1G  T40
+DE 101,Engineering 1st Semester X,1,3,Tut,Basic German 1,1E IX+X 1G  T41
+DE 101,Engineering 1st Semester X,5,2,Tut,Basic German 1,1E IX+X 1G  T41
+DE 101,Engineering 1st Semester X,5,2,Tut,Basic German 1,1E IX+X 1G  T42
+DE 101,Engineering 1st Semester X,1,3,Tut,Basic German 1,1E IX+X 1G  T42
+DE 101,Engineering 1st Semester X,1,3,Tut,Basic German 1,1E IX+X 1G  T43
+DE 101,Engineering 1st Semester X,5,2,Tut,Basic German 1,1E IX+X 1G  T43
+EDPT 201,Engineering 1st Semester I,3,1,Tut,Production Technology,1E T01
+CHEMt 102,Engineering 1st Semester I,4,3,Tut,Chemistry,1E T01
+MATH 103,Engineering 1st Semester I,6,3,Tut,Maths,1E T01
+CSEN 102,Engineering 1st Semester I,4,1,Tut,Introduction to computer science,1E T01
+MATH 103,Engineering 1st Semester I,3,3,Tut,Maths,1E T01
+PHYS 101,Engineering 1st Semester I,3,2,Tut,Physics,1E T01
+EDPT 201,Engineering 1st Semester I,3,2,Tut,Production Technology,1E T02
+MATH 103,Engineering 1st Semester I,3,3,Tut,Maths,1E T02
+PHYS 101,Engineering 1st Semester I,4,1,Tut,Physics,1E T02
+CHEMt 102,Engineering 1st Semester I,4,2,Tut,Chemistry,1E T02
+MATH 103,Engineering 1st Semester I,6,3,Tut,Maths,1E T02
+CSEN 102,Engineering 1st Semester I,3,1,Tut,Introduction to computer science,1E T02
+CHEMt 102,Engineering 1st Semester I,4,3,Tut,Chemistry,1E T03
+MATH 103,Engineering 1st Semester I,6,3,Tut,Maths,1E T03
+CSEN 102,Engineering 1st Semester I,4,1,Tut,Introduction to computer science,1E T03
+PHYS 101,Engineering 1st Semester I,3,2,Tut,Physics,1E T03
+EDPT 201,Engineering 1st Semester I,3,3,Tut,Production Technology,1E T03
+MATH 103,Engineering 1st Semester I,3,1,Tut,Maths,1E T03
+MATH 103,Engineering 1st Semester I,3,1,Tut,Maths,1E T04
+CSEN 102,Engineering 1st Semester I,3,2,Tut,Introduction to computer science,1E T04
+MATH 103,Engineering 1st Semester I,4,1,Tut,Maths,1E T04
+CHEMt 102,Engineering 1st Semester I,3,3,Tut,Chemistry,1E T04
+EDPT 201,Engineering 1st Semester I,4,2,Tut,Production Technology,1E T04
+PHYS 101,Engineering 1st Semester I,6,3,Tut,Physics,1E T04
+EDPT 201,Engineering 1st Semester I,6,3,Tut,Production Technology,1E T05
+PHYS 101,Engineering 1st Semester I,4,2,Tut,Physics,1E T05
+CSEN 102,Engineering 1st Semester I,3,3,Tut,Introduction to computer science,1E T05
+MATH 103,Engineering 1st Semester I,4,1,Tut,Maths,1E T05
+CHEMt 102,Engineering 1st Semester I,3,2,Tut,Chemistry,1E T05
+MATH 103,Engineering 1st Semester I,3,1,Tut,Maths,1E T05
+PHYS 101,Engineering 1st Semester II,3,1,Tut,Physics,1E T06
+MATH 103,Engineering 1st Semester II,3,2,Tut,Maths,1E T06
+MATH 103,Engineering 1st Semester II,4,3,Tut,Maths,1E T06
+CSEN 102,Engineering 1st Semester II,3,3,Tut,Introduction to computer science,1E T06
+ENGD 301,Engineering 1st Semester II,4,1,Tut,Engineering Drawing & Design,1E T06
+CHEMt 102,Engineering 1st Semester II,4,2,Tut,Chemistry,1E T06
+CHEMt 102,Engineering 1st Semester II,4,1,Tut,Chemistry,1E T07
+ENGD 301,Engineering 1st Semester II,4,2,Tut,Engineering Drawing & Design,1E T07
+PHYS 101,Engineering 1st Semester II,3,3,Tut,Physics,1E T07
+MATH 103,Engineering 1st Semester II,4,3,Tut,Maths,1E T07
+MATH 103,Engineering 1st Semester II,3,2,Tut,Maths,1E T07
+CSEN 102,Engineering 1st Semester II,3,1,Tut,Introduction to computer science,1E T07
+CSEN 102,Engineering 1st Semester II,3,1,Tut,Introduction to computer science,1E T08
+ENGD 301,Engineering 1st Semester II,6,3,Tut,Engineering Drawing & Design,1E T08
+MATH 103,Engineering 1st Semester II,3,3,Tut,Maths,1E T08
+MATH 103,Engineering 1st Semester II,4,2,Tut,Maths,1E T08
+CHEMt 102,Engineering 1st Semester II,4,1,Tut,Chemistry,1E T08
+PHYS 101,Engineering 1st Semester II,4,3,Tut,Physics,1E T08
+CHEMt 102,Engineering 1st Semester II,4,3,Tut,Chemistry,1E T09
+MATH 103,Engineering 1st Semester II,4,2,Tut,Maths,1E T09
+MATH 103,Engineering 1st Semester II,3,3,Tut,Maths,1E T09
+PHYS 101,Engineering 1st Semester II,4,1,Tut,Physics,1E T09
+ENGD 301,Engineering 1st Semester II,6,3,Tut,Engineering Drawing & Design,1E T09
+CSEN 102,Engineering 1st Semester II,3,1,Tut,Introduction to computer science,1E T09
+EDPT 201,Engineering 1st Semester III,1,3,Tut,Production Technology,1E T10
+MATH 103,Engineering 1st Semester III,3,2,Tut,Maths,1E T10
+PHYS 101,Engineering 1st Semester III,3,4,Tut,Physics,1E T10
+CHEMt 102,Engineering 1st Semester III,4,3,Tut,Chemistry,1E T10
+CSEN 102,Engineering 1st Semester III,4,4,Tut,Introduction to computer science,1E T10
+MATH 103,Engineering 1st Semester III,4,5,Tut,Maths,1E T10
+MATH 103,Engineering 1st Semester III,4,5,Tut,Maths,1E T11
+CHEMt 102,Engineering 1st Semester III,5,4,Tut,Chemistry,1E T11
+PHYS 101,Engineering 1st Semester III,4,3,Tut,Physics,1E T11
+EDPT 201,Engineering 1st Semester III,4,4,Tut,Production Technology,1E T11
+CSEN 102,Engineering 1st Semester III,1,3,Tut,Introduction to computer science,1E T11
+MATH 103,Engineering 1st Semester III,3,2,Tut,Maths,1E T11
+MATH 103,Engineering 1st Semester III,3,2,Tut,Maths,1E T12
+CSEN 102,Engineering 1st Semester III,1,3,Tut,Introduction to computer science,1E T12
+PHYS 101,Engineering 1st Semester III,4,4,Tut,Physics,1E T12
+MATH 103,Engineering 1st Semester III,4,3,Tut,Maths,1E T12
+CHEMt 102,Engineering 1st Semester III,5,4,Tut,Chemistry,1E T12
+EDPT 201,Engineering 1st Semester III,4,5,Tut,Production Technology,1E T12
+CSEN 102,Engineering 1st Semester III,4,4,Tut,Introduction to computer science,1E T13
+EDPT 201,Engineering 1st Semester III,5,4,Tut,Production Technology,1E T13
+MATH 103,Engineering 1st Semester III,4,3,Tut,Maths,1E T13
+PHYS 101,Engineering 1st Semester III,3,2,Tut,Physics,1E T13
+MATH 103,Engineering 1st Semester III,3,4,Tut,Maths,1E T13
+CHEMt 102,Engineering 1st Semester III,1,3,Tut,Chemistry,1E T13
+PHYS 101,Engineering 1st Semester III,1,3,Tut,Physics,1E T14
+CHEMt 102,Engineering 1st Semester III,3,2,Tut,Chemistry,1E T14
+MATH 103,Engineering 1st Semester III,3,4,Tut,Maths,1E T14
+EDPT 201,Engineering 1st Semester III,4,3,Tut,Production Technology,1E T14
+CSEN 102,Engineering 1st Semester III,4,4,Tut,Introduction to computer science,1E T14
+MATH 103,Engineering 1st Semester III,5,4,Tut,Maths,1E T14
+MATH 103,Engineering 1st Semester IV,1,3,Tut,Maths,1E T15
+CSEN 102,Engineering 1st Semester IV,3,2,Tut,Introduction to computer science,1E T15
+MATH 103,Engineering 1st Semester IV,4,4,Tut,Maths,1E T15
+ENGD 301,Engineering 1st Semester IV,4,5,Tut,Engineering Drawing & Design,1E T15
+PHYS 101,Engineering 1st Semester IV,4,3,Tut,Physics,1E T15
+CHEMt 102,Engineering 1st Semester IV,5,4,Tut,Chemistry,1E T15
+CSEN 102,Engineering 1st Semester IV,4,5,Tut,Introduction to computer science,1E T16
+PHYS 101,Engineering 1st Semester IV,4,3,Tut,Physics,1E T16
+MATH 103,Engineering 1st Semester IV,4,4,Tut,Maths,1E T16
+CHEMt 102,Engineering 1st Semester IV,3,4,Tut,Chemistry,1E T16
+ENGD 301,Engineering 1st Semester IV,3,2,Tut,Engineering Drawing & Design,1E T16
+MATH 103,Engineering 1st Semester IV,1,3,Tut,Maths,1E T16
+MATH 103,Engineering 1st Semester IV,1,3,Tut,Maths,1E T17
+CHEMt 102,Engineering 1st Semester IV,3,2,Tut,Chemistry,1E T17
+ENGD 301,Engineering 1st Semester IV,3,4,Tut,Engineering Drawing & Design,1E T17
+MATH 103,Engineering 1st Semester IV,4,4,Tut,Maths,1E T17
+CSEN 102,Engineering 1st Semester IV,4,3,Tut,Introduction to computer science,1E T17
+PHYS 101,Engineering 1st Semester IV,4,5,Tut,Physics,1E T17
+CSEN 102,Engineering 1st Semester IV,4,3,Tut,Introduction to computer science,1E T18
+MATH 103,Engineering 1st Semester IV,4,4,Tut,Maths,1E T18
+CHEMt 102,Engineering 1st Semester IV,4,5,Tut,Chemistry,1E T18
+ENGD 301,Engineering 1st Semester IV,1,3,Tut,Engineering Drawing & Design,1E T18
+PHYS 101,Engineering 1st Semester IV,3,2,Tut,Physics,1E T18
+MATH 103,Engineering 1st Semester IV,3,4,Tut,Maths,1E T18
+CSEN 102,Engineering 1st Semester V,2,1,Tut,Introduction to computer science,1E T19
+EDPT 201,Engineering 1st Semester V,1,4,Tut,Production Technology,1E T19
+MATH 103,Engineering 1st Semester V,2,2,Tut,Maths,1E T19
+PHYS 101,Engineering 1st Semester V,5,4,Tut,Physics,1E T19
+CHEMt 102,Engineering 1st Semester V,2,5,Tut,Chemistry,1E T19
+MATH 103,Engineering 1st Semester V,6,2,Tut,Maths,1E T19
+MATH 103,Engineering 1st Semester V,6,2,Tut,Maths,1E T20
+CHEMt 102,Engineering 1st Semester V,2,5,Tut,Chemistry,1E T20
+PHYS 101,Engineering 1st Semester V,5,4,Tut,Physics,1E T20
+MATH 103,Engineering 1st Semester V,2,2,Tut,Maths,1E T20
+CSEN 102,Engineering 1st Semester V,1,4,Tut,Introduction to computer science,1E T20
+EDPT 201,Engineering 1st Semester V,2,1,Tut,Production Technology,1E T20
+CHEMt 102,Engineering 1st Semester V,2,1,Tut,Chemistry,1E T21
+CSEN 102,Engineering 1st Semester V,1,4,Tut,Introduction to computer science,1E T21
+MATH 103,Engineering 1st Semester V,2,2,Tut,Maths,1E T21
+EDPT 201,Engineering 1st Semester V,2,5,Tut,Production Technology,1E T21
+PHYS 101,Engineering 1st Semester V,5,4,Tut,Physics,1E T21
+MATH 103,Engineering 1st Semester V,6,2,Tut,Maths,1E T21
+EDPT 201,Engineering 1st Semester V,5,2,Tut,Production Technology,1E T22
+MATH 103,Engineering 1st Semester V,5,4,Tut,Maths,1E T22
+MATH 103,Engineering 1st Semester V,2,5,Tut,Maths,1E T22
+PHYS 101,Engineering 1st Semester V,2,2,Tut,Physics,1E T22
+CHEMt 102,Engineering 1st Semester V,1,4,Tut,Chemistry,1E T22
+CSEN 102,Engineering 1st Semester V,2,1,Tut,Introduction to computer science,1E T22
+CSEN 102,Engineering 1st Semester V,2,1,Tut,Introduction to computer science,1E T23
+PHYS 101,Engineering 1st Semester V,1,4,Tut,Physics,1E T23
+MATH 103,Engineering 1st Semester V,2,5,Tut,Maths,1E T23
+MATH 103,Engineering 1st Semester V,5,4,Tut,Maths,1E T23
+EDPT 201,Engineering 1st Semester V,6,2,Tut,Production Technology,1E T23
+CHEMt 102,Engineering 1st Semester V,5,2,Tut,Chemistry,1E T23
+MATH 103,Engineering 1st Semester VI,1,4,Tut,Maths,1E T24
+PHYS 101,Engineering 1st Semester VI,2,1,Tut,Physics,1E T24
+CHEMt 102,Engineering 1st Semester VI,2,2,Tut,Chemistry,1E T24
+MATH 103,Engineering 1st Semester VI,5,4,Tut,Maths,1E T24
+CSEN 102,Engineering 1st Semester VI,5,2,Tut,Introduction to computer science,1E T24
+ENGD 301,Engineering 1st Semester VI,2,5,Tut,Engineering Drawing & Design,1E T24
+ENGD 301,Engineering 1st Semester VI,2,5,Tut,Engineering Drawing & Design,1E T25
+CSEN 102,Engineering 1st Semester VI,5,2,Tut,Introduction to computer science,1E T25
+MATH 103,Engineering 1st Semester VI,5,4,Tut,Maths,1E T25
+CHEMt 102,Engineering 1st Semester VI,2,2,Tut,Chemistry,1E T25
+PHYS 101,Engineering 1st Semester VI,2,1,Tut,Physics,1E T25
+MATH 103,Engineering 1st Semester VI,1,4,Tut,Maths,1E T25
+MATH 103,Engineering 1st Semester VI,1,4,Tut,Maths,1E T26
+CSEN 102,Engineering 1st Semester VI,2,1,Tut,Introduction to computer science,1E T26
+MATH 103,Engineering 1st Semester VI,5,4,Tut,Maths,1E T26
+ENGD 301,Engineering 1st Semester VI,6,2,Tut,Engineering Drawing & Design,1E T26
+CHEMt 102,Engineering 1st Semester VI,5,2,Tut,Chemistry,1E T26
+PHYS 101,Engineering 1st Semester VI,2,5,Tut,Physics,1E T26
+CSEN 102,Engineering 1st Semester VI,2,2,Tut,Introduction to computer science,1E T27
+MATH 103,Engineering 1st Semester VI,5,2,Tut,Maths,1E T27
+CHEMt 102,Engineering 1st Semester VI,6,2,Tut,Chemistry,1E T27
+PHYS 101,Engineering 1st Semester VI,5,4,Tut,Physics,1E T27
+ENGD 301,Engineering 1st Semester VI,1,4,Tut,Engineering Drawing & Design,1E T27
+MATH 103,Engineering 1st Semester VI,2,1,Tut,Maths,1E T27
+MATH 103,Engineering 1st Semester VII,6,1,Tut,Maths,1E T28
+CHEMt 102,Engineering 1st Semester VII,6,4,Tut,Chemistry,1E T28
+CSEN 102,Engineering 1st Semester VII,5,1,Tut,Introduction to computer science,1E T28
+EDPT 201,Engineering 1st Semester VII,1,2,Tut,Production Technology,1E T28
+PHYS 101,Engineering 1st Semester VII,1,1,Tut,Physics,1E T28
+MATH 103,Engineering 1st Semester VII,2,3,Tut,Maths,1E T28
+MATH 103,Engineering 1st Semester VII,2,3,Tut,Maths,1E T29
+CHEMt 102,Engineering 1st Semester VII,1,1,Tut,Chemistry,1E T29
+PHYS 101,Engineering 1st Semester VII,1,2,Tut,Physics,1E T29
+CSEN 102,Engineering 1st Semester VII,5,1,Tut,Introduction to computer science,1E T29
+EDPT 201,Engineering 1st Semester VII,6,4,Tut,Production Technology,1E T29
+MATH 103,Engineering 1st Semester VII,6,1,Tut,Maths,1E T29
+MATH 103,Engineering 1st Semester VII,6,1,Tut,Maths,1E T30
+EDPT 201,Engineering 1st Semester VII,5,3,Tut,Production Technology,1E T30
+CHEMt 102,Engineering 1st Semester VII,6,4,Tut,Chemistry,1E T30
+PHYS 101,Engineering 1st Semester VII,5,1,Tut,Physics,1E T30
+CSEN 102,Engineering 1st Semester VII,1,1,Tut,Introduction to computer science,1E T30
+MATH 103,Engineering 1st Semester VII,2,3,Tut,Maths,1E T30
+EDPT 201,Engineering 1st Semester VII,5,1,Tut,Production Technology,1E T31
+CSEN 102,Engineering 1st Semester VII,1,1,Tut,Introduction to computer science,1E T31
+CHEMt 102,Engineering 1st Semester VII,5,3,Tut,Chemistry,1E T31
+MATH 103,Engineering 1st Semester VII,6,4,Tut,Maths,1E T31
+PHYS 101,Engineering 1st Semester VII,6,1,Tut,Physics,1E T31
+MATH 103,Engineering 1st Semester VII,2,3,Tut,Maths,1E T31
+MATH 103,Engineering 1st Semester VII,2,3,Tut,Maths,1E T32
+EDPT 201,Engineering 1st Semester VII,6,1,Tut,Production Technology,1E T32
+MATH 103,Engineering 1st Semester VII,6,4,Tut,Maths,1E T32
+PHYS 101,Engineering 1st Semester VII,5,3,Tut,Physics,1E T32
+CSEN 102,Engineering 1st Semester VII,1,1,Tut,Introduction to computer science,1E T32
+CHEMt 102,Engineering 1st Semester VII,5,1,Tut,Chemistry,1E T32
+ENGD 301,Engineering 1st Semester VIII,1,2,Tut,Engineering Drawing & Design,1E T33
+MATH 103,Engineering 1st Semester VIII,1,1,Tut,Maths,1E T33
+PHYS 101,Engineering 1st Semester VIII,2,3,Tut,Physics,1E T33
+CHEMt 102,Engineering 1st Semester VIII,5,1,Tut,Chemistry,1E T33
+MATH 103,Engineering 1st Semester VIII,5,3,Tut,Maths,1E T33
+CSEN 102,Engineering 1st Semester VIII,6,1,Tut,Introduction to computer science,1E T33
+CSEN 102,Engineering 1st Semester VIII,6,1,Tut,Introduction to computer science,1E T34
+MATH 103,Engineering 1st Semester VIII,5,3,Tut,Maths,1E T34
+PHYS 101,Engineering 1st Semester VIII,5,1,Tut,Physics,1E T34
+ENGD 301,Engineering 1st Semester VIII,2,3,Tut,Engineering Drawing & Design,1E T34
+MATH 103,Engineering 1st Semester VIII,1,1,Tut,Maths,1E T34
+CHEMt 102,Engineering 1st Semester VIII,1,2,Tut,Chemistry,1E T34
+CHEMt 102,Engineering 1st Semester VIII,1,2,Tut,Chemistry,1E T35
+MATH 103,Engineering 1st Semester VIII,1,1,Tut,Maths,1E T35
+CSEN 102,Engineering 1st Semester VIII,2,3,Tut,Introduction to computer science,1E T35
+MATH 103,Engineering 1st Semester VIII,5,3,Tut,Maths,1E T35
+ENGD 301,Engineering 1st Semester VIII,6,1,Tut,Engineering Drawing & Design,1E T35
+PHYS 101,Engineering 1st Semester VIII,6,4,Tut,Physics,1E T35
+PHYS 101,Engineering 1st Semester VIII,6,4,Tut,Physics,1E T36
+CHEMt 102,Engineering 1st Semester VIII,6,1,Tut,Chemistry,1E T36
+MATH 103,Engineering 1st Semester VIII,5,1,Tut,Maths,1E T36
+CSEN 102,Engineering 1st Semester VIII,2,3,Tut,Introduction to computer science,1E T36
+ENGD 301,Engineering 1st Semester VIII,1,1,Tut,Engineering Drawing & Design,1E T36
+MATH 103,Engineering 1st Semester VIII,1,2,Tut,Maths,1E T36
+EDPT 201,Engineering 1st Semester IX,1,5,Tut,Production Technology,1E T37
+PHYS 101,Engineering 1st Semester IX,6,3,Tut,Physics,1E T37
+CHEMt 102,Engineering 1st Semester IX,5,1,Tut,Chemistry,1E T37
+CSEN 102,Engineering 1st Semester IX,2,2,Tut,Introduction to computer science,1E T37
+MATH 103,Engineering 1st Semester IX,2,4,Tut,Maths,1E T37
+MATH 103,Engineering 1st Semester IX,6,5,Tut,Maths,1E T37
+MATH 103,Engineering 1st Semester IX,6,5,Tut,Maths,1E T38
+MATH 103,Engineering 1st Semester IX,2,4,Tut,Maths,1E T38
+PHYS 101,Engineering 1st Semester IX,6,3,Tut,Physics,1E T38
+CSEN 102,Engineering 1st Semester IX,1,5,Tut,Introduction to computer science,1E T38
+EDPT 201,Engineering 1st Semester IX,2,2,Tut,Production Technology,1E T38
+CHEMt 102,Engineering 1st Semester IX,2,3,Tut,Chemistry,1E T38
+PHYS 101,Engineering 1st Semester IX,2,3,Tut,Physics,1E T39
+EDPT 201,Engineering 1st Semester IX,2,4,Tut,Production Technology,1E T39
+MATH 103,Engineering 1st Semester IX,2,2,Tut,Maths,1E T39
+CSEN 102,Engineering 1st Semester IX,1,5,Tut,Introduction to computer science,1E T39
+MATH 103,Engineering 1st Semester IX,6,3,Tut,Maths,1E T39
+CHEMt 102,Engineering 1st Semester IX,6,5,Tut,Chemistry,1E T39
+PHYS 101,Engineering 1st Semester IX,6,5,Tut,Physics,1E T40
+EDPT 201,Engineering 1st Semester IX,2,3,Tut,Production Technology,1E T40
+MATH 103,Engineering 1st Semester IX,6,3,Tut,Maths,1E T40
+CSEN 102,Engineering 1st Semester IX,2,4,Tut,Introduction to computer science,1E T40
+CHEMt 102,Engineering 1st Semester IX,1,5,Tut,Chemistry,1E T40
+MATH 103,Engineering 1st Semester IX,2,2,Tut,Maths,1E T40
+MATH 103,Engineering 1st Semester IX,2,2,Tut,Maths,1E T41
+PHYS 101,Engineering 1st Semester IX,1,5,Tut,Physics,1E T41
+MATH 103,Engineering 1st Semester IX,6,3,Tut,Maths,1E T41
+CSEN 102,Engineering 1st Semester IX,2,3,Tut,Introduction to computer science,1E T41
+CHEMt 102,Engineering 1st Semester IX,5,1,Tut,Chemistry,1E T41
+EDPT 201,Engineering 1st Semester IX,6,5,Tut,Production Technology,1E T41
+ENGD 301,Engineering 1st Semester X,2,2,Tut,Engineering Drawing & Design,1E T42
+CHEMt 102,Engineering 1st Semester X,2,3,Tut,Chemistry,1E T42
+MATH 103,Engineering 1st Semester X,1,5,Tut,Maths,1E T42
+CSEN 102,Engineering 1st Semester X,6,3,Tut,Introduction to computer science,1E T42
+PHYS 101,Engineering 1st Semester X,2,4,Tut,Physics,1E T42
+MATH 103,Engineering 1st Semester X,5,1,Tut,Maths,1E T42
+MATH 103,Engineering 1st Semester X,5,1,Tut,Maths,1E T43
+CSEN 102,Engineering 1st Semester X,6,3,Tut,Introduction to computer science,1E T43
+ENGD 301,Engineering 1st Semester X,2,4,Tut,Engineering Drawing & Design,1E T43
+MATH 103,Engineering 1st Semester X,1,5,Tut,Maths,1E T43
+CHEMt 102,Engineering 1st Semester X,2,3,Tut,Chemistry,1E T43
+PHYS 101,Engineering 1st Semester X,2,2,Tut,Physics,1E T43
+CSEN 102,Engineering 1st Semester X,2,2,Tut,Introduction to computer science,1E T44
+MATH 103,Engineering 1st Semester X,1,5,Tut,Maths,1E T44
+CHEMt 102,Engineering 1st Semester X,6,3,Tut,Chemistry,1E T44
+MATH 103,Engineering 1st Semester X,5,1,Tut,Maths,1E T44
+PHYS 101,Engineering 1st Semester X,2,4,Tut,Physics,1E T44
+ENGD 301,Engineering 1st Semester X,6,5,Tut,Engineering Drawing & Design,1E T44
+PHYS 101,Engineering 1st Semester X,6,5,Tut,Physics,1E T45
+MATH 103,Engineering 1st Semester X,5,1,Tut,Maths,1E T45
+CHEMt 102,Engineering 1st Semester X,6,3,Tut,Chemistry,1E T45
+MATH 103,Engineering 1st Semester X,2,4,Tut,Maths,1E T45
+ENGD 301,Engineering 1st Semester X,1,5,Tut,Engineering Drawing & Design,1E T45
+CSEN 102,Engineering 1st Semester X,2,2,Tut,Introduction to computer science,1E T45
+DE 101,Engineering 1st Semester V,5,3,Tut,Basic German 1,1E V+VI 1G T18
+DE 101,Engineering 1st Semester V,1,5,Tut,Basic German 1,1E V+VI 1G T18
+DE 101,Engineering 1st Semester V,1,5,Tut,Basic German 1,1E V+VI 1G T19
+DE 101,Engineering 1st Semester V,5,3,Tut,Basic German 1,1E V+VI 1G T19
+DE 101,Engineering 1st Semester V,5,3,Tut,Basic German 1,1E V+VI 1G T20
+DE 101,Engineering 1st Semester V,1,5,Tut,Basic German 1,1E V+VI 1G T20
+DE 101,Engineering 1st Semester V,1,5,Tut,Basic German 1,1E V+VI 1G T21
+DE 101,Engineering 1st Semester V,5,3,Tut,Basic German 1,1E V+VI 1G T21
+DE 101,Engineering 1st Semester V,5,3,Tut,Basic German 1,1E V+VI 1G T22
+DE 101,Engineering 1st Semester V,1,5,Tut,Basic German 1,1E V+VI 1G T22
+DE 101,Engineering 1st Semester VI,1,5,Tut,Basic German 1,1E V+VI 1G T23
+DE 101,Engineering 1st Semester VI,5,3,Tut,Basic German 1,1E V+VI 1G T23
+DE 101,Engineering 1st Semester VI,5,3,Tut,Basic German 1,1E V+VI 1G T24
+DE 101,Engineering 1st Semester VI,1,5,Tut,Basic German 1,1E V+VI 1G T24
+DE 101,Engineering 1st Semester VI,1,5,Tut,Basic German 1,1E V+VI 1G T25
+DE 101,Engineering 1st Semester VI,5,3,Tut,Basic German 1,1E V+VI 1G T25
+DE 101,Engineering 1st Semester VII,2,4,Tut,Basic German 1,1E VII+VIII 1G T27
+DE 101,Engineering 1st Semester VII,6,3,Tut,Basic German 1,1E VII+VIII 1G T27
+DE 101,Engineering 1st Semester VII,6,3,Tut,Basic German 1,1E VII+VIII 1G T28
+DE 101,Engineering 1st Semester VII,2,4,Tut,Basic German 1,1E VII+VIII 1G T28
+DE 101,Engineering 1st Semester VII,2,4,Tut,Basic German 1,1E VII+VIII 1G T29
+DE 101,Engineering 1st Semester VII,6,3,Tut,Basic German 1,1E VII+VIII 1G T29
+DE 101,Engineering 1st Semester VII,6,3,Tut,Basic German 1,1E VII+VIII 1G T30
+DE 101,Engineering 1st Semester VII,2,4,Tut,Basic German 1,1E VII+VIII 1G T30
+DE 101,Engineering 1st Semester VII,2,4,Tut,Basic German 1,1E VII+VIII 1G T31
+DE 101,Engineering 1st Semester VII,6,3,Tut,Basic German 1,1E VII+VIII 1G T31
+DE 101,Engineering 1st Semester VIII,2,4,Tut,Basic German 1,1E VII+VIII 1G T32
+DE 101,Engineering 1st Semester VIII,6,3,Tut,Basic German 1,1E VII+VIII 1G T32
+DE 101,Engineering 1st Semester VIII,6,3,Tut,Basic German 1,1E VII+VIII 1G T33
+DE 101,Engineering 1st Semester VIII,2,4,Tut,Basic German 1,1E VII+VIII 1G T33
+DE 101,Engineering 1st Semester VIII,2,4,Tut,Basic German 1,1E VII+VIII 1G T34
+DE 101,Engineering 1st Semester VIII,6,3,Tut,Basic German 1,1E VII+VIII 1G T34
+CPS 402,IET & MET 3rd Semester I,3,1,Tut,Communication & Presentation Skills (A2),3 IET&MET I CPS T50
+CPS 402,IET & MET 3rd Semester I,3,1,Tut,Communication & Presentation Skills (A2),3 IET&MET I CPS T51
+CPS 402,IET & MET 3rd Semester I,3,1,Tut,Communication & Presentation Skills (A2),3 IET&MET I CPS T52
+CPS 402,IET & MET 3rd Semester I,3,1,Tut,Communication & Presentation Skills (A2),3 IET&MET I CPS T53
+CPS 402,IET & MET 3rd Semester I,3,1,Tut,Communication & Presentation Skills (A2),3 IET&MET I CPS T54
+SM 101,IET & MET 3rd Semester I,3,1,Tut,Scientific Methods (A1),3 IET&MET I SM T24
+SM 101,IET & MET 3rd Semester I,3,1,Tut,Scientific Methods (A1),3 IET&MET I SM T25
+SM 101,IET & MET 3rd Semester I,3,1,Tut,Scientific Methods (A1),3 IET&MET I SM T26
+SM 101,IET & MET 3rd Semester I,3,1,Tut,Scientific Methods (A1),3 IET&MET I SM T27
+CPS 402,IET & MET 3rd Semester II,3,2,Tut,Communication & Presentation Skills (A2),3 IET&MET II CPS T55
+CPS 402,IET & MET 3rd Semester II,3,2,Tut,Communication & Presentation Skills (A2),3 IET&MET II CPS T56
+CPS 402,IET & MET 3rd Semester II,3,2,Tut,Communication & Presentation Skills (A2),3 IET&MET II CPS T57
+CPS 402,IET & MET 3rd Semester II,3,2,Tut,Communication & Presentation Skills (A2),3 IET&MET II CPS T58
+CPS 402,IET & MET 3rd Semester II,3,2,Tut,Communication & Presentation Skills (A2),3 IET&MET II CPS T59
+SM 101,IET & MET 3rd Semester II,3,2,Tut,Scientific Methods (A1),3 IET&MET II SM T28
+SM 101,IET & MET 3rd Semester II,3,2,Tut,Scientific Methods (A1),3 IET&MET II SM T29
+SM 101,IET & MET 3rd Semester II,3,2,Tut,Scientific Methods (A1),3 IET&MET II SM T37
+CSEN 301,IET & MET 3rd Semester I,5,2,Tut,Data structures and Algorithms,3IET/MET T01
+MATH 301,IET & MET 3rd Semester I,5,3,Tut,Mathematics III,3IET/MET T01
+ELCT 201,IET & MET 3rd Semester I,4,2,Tut,Digital Logic Design,3IET/MET T01
+ELCT 301,IET & MET 3rd Semester I,3,3,Tut,Electrical Circuits I,3IET/MET T01
+MATH 301,IET & MET 3rd Semester I,3,4,Tut,Mathematics III,3IET/MET T01
+PHYSt 301,IET & MET 3rd Semester I,4,1,Tut,Physics III (t),3IET/MET T01
+ELCT 201,IET & MET 3rd Semester I,4,2,Tut,Digital Logic Design,3IET/MET T02
+MATH 301,IET & MET 3rd Semester I,3,4,Tut,Mathematics III,3IET/MET T02
+PHYSt 301,IET & MET 3rd Semester I,3,3,Tut,Physics III (t),3IET/MET T02
+ELCT 301,IET & MET 3rd Semester I,4,1,Tut,Electrical Circuits I,3IET/MET T02
+MATH 301,IET & MET 3rd Semester I,5,3,Tut,Mathematics III,3IET/MET T02
+CSEN 301,IET & MET 3rd Semester I,5,2,Tut,Data structures and Algorithms,3IET/MET T02
+ELCT 301,IET & MET 3rd Semester I,5,3,Tut,Electrical Circuits I,3IET/MET T03
+MATH 301,IET & MET 3rd Semester I,6,5,Tut,Mathematics III,3IET/MET T03
+CSEN 301,IET & MET 3rd Semester I,2,4,Tut,Data structures and Algorithms,3IET/MET T03
+ELCT 201,IET & MET 3rd Semester I,5,2,Tut,Digital Logic Design,3IET/MET T03
+MATH 301,IET & MET 3rd Semester I,4,2,Tut,Mathematics III,3IET/MET T03
+PHYSt 301,IET & MET 3rd Semester I,2,5,Tut,Physics III (t),3IET/MET T03
+MATH 301,IET & MET 3rd Semester I,4,2,Tut,Mathematics III,3IET/MET T04
+ELCT 201,IET & MET 3rd Semester I,2,4,Tut,Digital Logic Design,3IET/MET T04
+CSEN 301,IET & MET 3rd Semester I,2,5,Tut,Data structures and Algorithms,3IET/MET T04
+MATH 301,IET & MET 3rd Semester I,6,5,Tut,Mathematics III,3IET/MET T04
+ELCT 301,IET & MET 3rd Semester I,6,4,Tut,Electrical Circuits I,3IET/MET T04
+PHYSt 301,IET & MET 3rd Semester I,5,3,Tut,Physics III (t),3IET/MET T04
+CSEN 301,IET & MET 3rd Semester I,2,5,Tut,Data structures and Algorithms,3IET/MET T05
+PHYSt 301,IET & MET 3rd Semester I,6,5,Tut,Physics III (t),3IET/MET T05
+MATH 301,IET & MET 3rd Semester I,6,4,Tut,Mathematics III,3IET/MET T05
+ELCT 201,IET & MET 3rd Semester I,5,3,Tut,Digital Logic Design,3IET/MET T05
+ELCT 301,IET & MET 3rd Semester I,3,4,Tut,Electrical Circuits I,3IET/MET T05
+MATH 301,IET & MET 3rd Semester I,5,2,Tut,Mathematics III,3IET/MET T05
+MATH 301,IET & MET 3rd Semester I,3,4,Tut,Mathematics III,3IET/MET T06
+ELCT 301,IET & MET 3rd Semester I,3,3,Tut,Electrical Circuits I,3IET/MET T06
+ELCT 201,IET & MET 3rd Semester I,5,2,Tut,Digital Logic Design,3IET/MET T06
+PHYSt 301,IET & MET 3rd Semester I,2,4,Tut,Physics III (t),3IET/MET T06
+CSEN 301,IET & MET 3rd Semester I,6,4,Tut,Data structures and Algorithms,3IET/MET T06
+MATH 301,IET & MET 3rd Semester I,5,3,Tut,Mathematics III,3IET/MET T06
+CSEN 301,IET & MET 3rd Semester I,4,2,Tut,Data structures and Algorithms,3IET/MET T07
+MATH 301,IET & MET 3rd Semester I,4,1,Tut,Mathematics III,3IET/MET T07
+ELCT 301,IET & MET 3rd Semester I,3,3,Tut,Electrical Circuits I,3IET/MET T07
+ELCT 201,IET & MET 3rd Semester I,3,4,Tut,Digital Logic Design,3IET/MET T07
+PHYSt 301,IET & MET 3rd Semester I,2,5,Tut,Physics III (t),3IET/MET T07
+MATH 301,IET & MET 3rd Semester I,2,4,Tut,Mathematics III,3IET/MET T07
+ELCT 201,IET & MET 3rd Semester I,3,4,Tut,Digital Logic Design,3IET/MET T08
+MATH 301,IET & MET 3rd Semester I,4,1,Tut,Mathematics III,3IET/MET T08
+PHYSt 301,IET & MET 3rd Semester I,4,2,Tut,Physics III (t),3IET/MET T08
+ELCT 301,IET & MET 3rd Semester I,2,4,Tut,Electrical Circuits I,3IET/MET T08
+MATH 301,IET & MET 3rd Semester I,2,5,Tut,Mathematics III,3IET/MET T08
+CSEN 301,IET & MET 3rd Semester I,3,3,Tut,Data structures and Algorithms,3IET/MET T08
+CSEN 301,IET & MET 3rd Semester I,2,4,Tut,Data structures and Algorithms,3IET/MET T09
+MATH 301,IET & MET 3rd Semester I,2,5,Tut,Mathematics III,3IET/MET T09
+ELCT 201,IET & MET 3rd Semester I,5,3,Tut,Digital Logic Design,3IET/MET T09
+PHYSt 301,IET & MET 3rd Semester I,5,2,Tut,Physics III (t),3IET/MET T09
+MATH 301,IET & MET 3rd Semester I,4,1,Tut,Mathematics III,3IET/MET T09
+ELCT 301,IET & MET 3rd Semester I,3,4,Tut,Electrical Circuits I,3IET/MET T09
+ELCT 201,IET & MET 3rd Semester I,4,1,Tut,Digital Logic Design,3IET/MET T10
+MATH 301,IET & MET 3rd Semester I,3,3,Tut,Mathematics III,3IET/MET T10
+MATH 301,IET & MET 3rd Semester I,5,2,Tut,Mathematics III,3IET/MET T10
+ELCT 301,IET & MET 3rd Semester I,4,2,Tut,Electrical Circuits I,3IET/MET T10
+CSEN 301,IET & MET 3rd Semester I,2,5,Tut,Data structures and Algorithms,3IET/MET T10
+PHYSt 301,IET & MET 3rd Semester I,5,3,Tut,Physics III (t),3IET/MET T10
+ELCT 301,IET & MET 3rd Semester II,5,4,Tut,Electrical Circuits I,3IET/MET T11
+MATH 301,IET & MET 3rd Semester II,4,4,Tut,Mathematics III,3IET/MET T11
+ELCT 201,IET & MET 3rd Semester II,5,2,Tut,Digital Logic Design,3IET/MET T11
+PHYSt 301,IET & MET 3rd Semester II,4,3,Tut,Physics III (t),3IET/MET T11
+CSEN 301,IET & MET 3rd Semester II,5,5,Tut,Data structures and Algorithms,3IET/MET T11
+MATH 301,IET & MET 3rd Semester II,6,2,Tut,Mathematics III,3IET/MET T11
+MATH 301,IET & MET 3rd Semester II,6,2,Tut,Mathematics III,3IET/MET T12
+CSEN 301,IET & MET 3rd Semester II,5,4,Tut,Data structures and Algorithms,3IET/MET T12
+ELCT 201,IET & MET 3rd Semester II,5,5,Tut,Digital Logic Design,3IET/MET T12
+PHYSt 301,IET & MET 3rd Semester II,2,3,Tut,Physics III (t),3IET/MET T12
+ELCT 301,IET & MET 3rd Semester II,5,2,Tut,Electrical Circuits I,3IET/MET T12
+MATH 301,IET & MET 3rd Semester II,2,2,Tut,Mathematics III,3IET/MET T12
+CSEN 301,IET & MET 3rd Semester II,2,2,Tut,Data structures and Algorithms,3IET/MET T13
+ELCT 301,IET & MET 3rd Semester II,5,4,Tut,Electrical Circuits I,3IET/MET T13
+MATH 301,IET & MET 3rd Semester II,5,2,Tut,Mathematics III,3IET/MET T13
+ELCT 201,IET & MET 3rd Semester II,3,4,Tut,Digital Logic Design,3IET/MET T13
+PHYSt 301,IET & MET 3rd Semester II,6,2,Tut,Physics III (t),3IET/MET T13
+MATH 301,IET & MET 3rd Semester II,6,3,Tut,Mathematics III,3IET/MET T13
+ELCT 301,IET & MET 3rd Semester II,6,2,Tut,Electrical Circuits I,3IET/MET T14
+CSEN 301,IET & MET 3rd Semester II,3,4,Tut,Data structures and Algorithms,3IET/MET T14
+MATH 301,IET & MET 3rd Semester II,5,2,Tut,Mathematics III,3IET/MET T14
+MATH 301,IET & MET 3rd Semester II,6,3,Tut,Mathematics III,3IET/MET T14
+PHYSt 301,IET & MET 3rd Semester II,2,2,Tut,Physics III (t),3IET/MET T14
+ELCT 201,IET & MET 3rd Semester II,2,3,Tut,Digital Logic Design,3IET/MET T14
+PHYSt 301,IET & MET 3rd Semester II,2,2,Tut,Physics III (t),3IET/MET T15
+MATH 301,IET & MET 3rd Semester II,6,3,Tut,Mathematics III,3IET/MET T15
+MATH 301,IET & MET 3rd Semester II,4,3,Tut,Mathematics III,3IET/MET T15
+ELCT 201,IET & MET 3rd Semester II,4,4,Tut,Digital Logic Design,3IET/MET T15
+CSEN 301,IET & MET 3rd Semester II,2,3,Tut,Data structures and Algorithms,3IET/MET T15
+ELCT 301,IET & MET 3rd Semester II,6,2,Tut,Electrical Circuits I,3IET/MET T15
+ELCT 201,IET & MET 3rd Semester II,3,4,Tut,Digital Logic Design,3IET/MET T16
+CSEN 301,IET & MET 3rd Semester II,4,3,Tut,Data structures and Algorithms,3IET/MET T16
+MATH 301,IET & MET 3rd Semester II,5,4,Tut,Mathematics III,3IET/MET T16
+ELCT 301,IET & MET 3rd Semester II,5,2,Tut,Electrical Circuits I,3IET/MET T16
+PHYSt 301,IET & MET 3rd Semester II,2,2,Tut,Physics III (t),3IET/MET T16
+MATH 301,IET & MET 3rd Semester II,2,3,Tut,Mathematics III,3IET/MET T16
+MATH 301,IET & MET 3rd Semester II,2,3,Tut,Mathematics III,3IET/MET T17
+ELCT 301,IET & MET 3rd Semester II,2,2,Tut,Electrical Circuits I,3IET/MET T17
+MATH 301,IET & MET 3rd Semester II,5,4,Tut,Mathematics III,3IET/MET T17
+CSEN 301,IET & MET 3rd Semester II,4,3,Tut,Data structures and Algorithms,3IET/MET T17
+PHYSt 301,IET & MET 3rd Semester II,3,4,Tut,Physics III (t),3IET/MET T17
+ELCT 201,IET & MET 3rd Semester II,5,5,Tut,Digital Logic Design,3IET/MET T17
+ELCT 301,IET & MET 3rd Semester II,6,2,Tut,Electrical Circuits I,3IET/MET T18
+MATH 301,IET & MET 3rd Semester II,3,4,Tut,Mathematics III,3IET/MET T18
+MATH 301,IET & MET 3rd Semester II,5,4,Tut,Mathematics III,3IET/MET T18
+CSEN 301,IET & MET 3rd Semester II,4,3,Tut,Data structures and Algorithms,3IET/MET T18
+ELCT 201,IET & MET 3rd Semester II,4,4,Tut,Digital Logic Design,3IET/MET T18
+PHYSt 301,IET & MET 3rd Semester II,6,3,Tut,Physics III (t),3IET/MET T18
+PHYSt 301,IET & MET 3rd Semester II,6,3,Tut,Physics III (t),3IET/MET T19
+ELCT 201,IET & MET 3rd Semester II,4,3,Tut,Digital Logic Design,3IET/MET T19
+CSEN 301,IET & MET 3rd Semester II,3,4,Tut,Data structures and Algorithms,3IET/MET T19
+MATH 301,IET & MET 3rd Semester II,4,4,Tut,Mathematics III,3IET/MET T19
+MATH 301,IET & MET 3rd Semester II,6,2,Tut,Mathematics III,3IET/MET T19
+ELCT 301,IET & MET 3rd Semester II,5,5,Tut,Electrical Circuits I,3IET/MET T19
+DE 202,IET & MET 3rd Semester I,5,1,Tut,Basic German 2,3MIET I 2G T07
+DE 202,IET & MET 3rd Semester I,6,3,Tut,Basic German 2,3MIET I 2G T07
+DE 202,IET & MET 3rd Semester I,6,3,Tut,Basic German 2,3MIET I 2G T08
+DE 202,IET & MET 3rd Semester I,5,1,Tut,Basic German 2,3MIET I 2G T08
+DE 303,IET & MET 3rd Semester I,5,1,Tut,Basic German 3,3MIET I 3G T23
+DE 303,IET & MET 3rd Semester I,6,3,Tut,Basic German 3,3MIET I 3G T23
+DE 303,IET & MET 3rd Semester I,6,3,Tut,Basic German 3,3MIET I 3G T24
+DE 303,IET & MET 3rd Semester I,5,1,Tut,Basic German 3,3MIET I 3G T24
+DE 303,IET & MET 3rd Semester I,5,1,Tut,Basic German 3,3MIET I 3G T25
+DE 303,IET & MET 3rd Semester I,6,3,Tut,Basic German 3,3MIET I 3G T25
+DE 303,IET & MET 3rd Semester I,6,3,Tut,Basic German 3,3MIET I 3G T26
+DE 303,IET & MET 3rd Semester I,5,1,Tut,Basic German 3,3MIET I 3G T26
+DE 303,IET & MET 3rd Semester I,6,3,Tut,Basic German 3,3MIET I 3G T27
+DE 303,IET & MET 3rd Semester I,5,1,Tut,Basic German 3,3MIET I 3G T27
+DE 303,IET & MET 3rd Semester II,3,3,Tut,Basic German 3,3MIET II 3G T28
+DE 303,IET & MET 3rd Semester II,6,4,Tut,Basic German 3,3MIET II 3G T28
+DE 303,IET & MET 3rd Semester II,6,4,Tut,Basic German 3,3MIET II 3G T29
+DE 303,IET & MET 3rd Semester II,3,3,Tut,Basic German 3,3MIET II 3G T29
+DE 303,IET & MET 3rd Semester II,3,3,Tut,Basic German 3,3MIET II 3G T30
+DE 303,IET & MET 3rd Semester II,6,4,Tut,Basic German 3,3MIET II 3G T30
+DE 303,IET & MET 3rd Semester II,6,4,Tut,Basic German 3,3MIET II 3G T31
+DE 303,IET & MET 3rd Semester II,3,3,Tut,Basic German 3,3MIET II 3G T31
+DE 303,IET & MET 3rd Semester II,3,3,Tut,Basic German 3,3MIET II 3G T32
+DE 303,IET & MET 3rd Semester II,6,4,Tut,Basic German 3,3MIET II 3G T32
+DE 303,IET & MET 3rd Semester II,6,4,Tut,Basic German 3,3MIET II 3G T33
+DE 303,IET & MET 3rd Semester II,3,3,Tut,Basic German 3,3MIET II 3G T33
+DE 404,IET & MET 3rd Semester II,3,3,Tut,Basic German 4,3MIET II 4G T13
+DE 404,IET & MET 3rd Semester II,6,4,Tut,Basic German 4,3MIET II 4G T13
+CPS 402,MET Computer Science 5th Semester I,6,1,Tut,Communication & Presentation Skills (A2),5 MET CPS T07
+RPW 401,MET Computer Science 5th Semester I,6,1,Tut,Research Paper Writing (A2),5 MET RPW T25
+RPW 401,MET Computer Science 5th Semester I,6,1,Tut,Research Paper Writing (A2),5 MET RPW T26
+RPW 401,MET Computer Science 5th Semester II,6,1,Tut,Research Paper Writing (A2),5 MET RPW T27
+RPW 401,MET Computer Science 5th Semester II,6,1,Tut,Research Paper Writing (A2),5 MET RPW T28
+CSEN 605,MET Computer Science 5th Semester I,1,1,Tut,Digital System Design ,5CSEN T10
+CSEN 501,MET Computer Science 5th Semester I,2,3,Tut,Data Base I,5CSEN T10
+DMET 501,MET Computer Science 5th Semester I,2,4,Tut,Introduction to media Engineering,5CSEN T10
+CSEN 502,MET Computer Science 5th Semester I,6,2,Tut,Theory of Computation,5CSEN T10
+CSEN 503,MET Computer Science 5th Semester I,3,4,Tut,Introduction To Communication Networks,5CSEN T10
+MATH 501,MET Computer Science 5th Semester I,3,2,Tut,Mathematics V (Discrete Math),5CSEN T10
+DMET 501,MET Computer Science 5th Semester I,3,2,Tut,Introduction to media Engineering,5CSEN T11
+CSEN 502,MET Computer Science 5th Semester I,3,4,Tut,Theory of Computation,5CSEN T11
+CSEN 605,MET Computer Science 5th Semester I,2,3,Tut,Digital System Design ,5CSEN T11
+CSEN 503,MET Computer Science 5th Semester I,2,5,Tut,Introduction To Communication Networks,5CSEN T11
+CSEN 501,MET Computer Science 5th Semester I,6,2,Tut,Data Base I,5CSEN T11
+MATH 501,MET Computer Science 5th Semester I,1,1,Tut,Mathematics V (Discrete Math),5CSEN T11
+CSEN 503,MET Computer Science 5th Semester I,1,1,Tut,Introduction To Communication Networks,5CSEN T12
+DMET 501,MET Computer Science 5th Semester I,6,4,Tut,Introduction to media Engineering,5CSEN T12
+MATH 501,MET Computer Science 5th Semester I,2,5,Tut,Mathematics V (Discrete Math),5CSEN T12
+CSEN 501,MET Computer Science 5th Semester I,2,4,Tut,Data Base I,5CSEN T12
+CSEN 502,MET Computer Science 5th Semester I,2,3,Tut,Theory of Computation,5CSEN T12
+CSEN 605,MET Computer Science 5th Semester I,3,2,Tut,Digital System Design ,5CSEN T12
+MATH 501,MET Computer Science 5th Semester I,3,4,Tut,Mathematics V (Discrete Math),5CSEN T13
+CSEN 503,MET Computer Science 5th Semester I,2,3,Tut,Introduction To Communication Networks,5CSEN T13
+CSEN 605,MET Computer Science 5th Semester I,2,5,Tut,Digital System Design ,5CSEN T13
+CSEN 501,MET Computer Science 5th Semester I,6,2,Tut,Data Base I,5CSEN T13
+CSEN 502,MET Computer Science 5th Semester I,6,4,Tut,Theory of Computation,5CSEN T13
+DMET 501,MET Computer Science 5th Semester I,1,1,Tut,Introduction to media Engineering,5CSEN T13
+MATH 501,MET Computer Science 5th Semester I,1,1,Tut,Mathematics V (Discrete Math),5CSEN T14
+CSEN 605,MET Computer Science 5th Semester I,6,2,Tut,Digital System Design ,5CSEN T14
+CSEN 501,MET Computer Science 5th Semester I,6,4,Tut,Data Base I,5CSEN T14
+CSEN 502,MET Computer Science 5th Semester I,1,4,Tut,Theory of Computation,5CSEN T14
+DMET 501,MET Computer Science 5th Semester I,3,4,Tut,Introduction to media Engineering,5CSEN T14
+CSEN 503,MET Computer Science 5th Semester I,3,2,Tut,Introduction To Communication Networks,5CSEN T14
+CSEN 502,MET Computer Science 5th Semester II,3,3,Tut,Theory of Computation,5CSEN T15
+DMET 501,MET Computer Science 5th Semester II,6,3,Tut,Introduction to media Engineering,5CSEN T15
+CSEN 501,MET Computer Science 5th Semester II,3,4,Tut,Data Base I,5CSEN T15
+CSEN 503,MET Computer Science 5th Semester II,1,2,Tut,Introduction To Communication Networks,5CSEN T15
+MATH 501,MET Computer Science 5th Semester II,2,4,Tut,Mathematics V (Discrete Math),5CSEN T15
+CSEN 605,MET Computer Science 5th Semester II,2,1,Tut,Digital System Design ,5CSEN T15
+CSEN 503,MET Computer Science 5th Semester II,1,4,Tut,Introduction To Communication Networks,5CSEN T16
+MATH 501,MET Computer Science 5th Semester II,2,2,Tut,Mathematics V (Discrete Math),5CSEN T16
+CSEN 501,MET Computer Science 5th Semester II,3,3,Tut,Data Base I,5CSEN T16
+DMET 501,MET Computer Science 5th Semester II,2,1,Tut,Introduction to media Engineering,5CSEN T16
+CSEN 502,MET Computer Science 5th Semester II,2,4,Tut,Theory of Computation,5CSEN T16
+CSEN 605,MET Computer Science 5th Semester II,3,4,Tut,Digital System Design ,5CSEN T16
+CSEN 605,MET Computer Science 5th Semester II,2,4,Tut,Digital System Design ,5CSEN T17
+CSEN 502,MET Computer Science 5th Semester II,1,2,Tut,Theory of Computation,5CSEN T17
+CSEN 501,MET Computer Science 5th Semester II,3,4,Tut,Data Base I,5CSEN T17
+CSEN 503,MET Computer Science 5th Semester II,6,3,Tut,Introduction To Communication Networks,5CSEN T17
+MATH 501,MET Computer Science 5th Semester II,1,4,Tut,Mathematics V (Discrete Math),5CSEN T17
+DMET 501,MET Computer Science 5th Semester II,2,2,Tut,Introduction to media Engineering,5CSEN T17
+CSEN 501,MET Computer Science 5th Semester II,2,2,Tut,Data Base I,5CSEN T18
+CSEN 503,MET Computer Science 5th Semester II,2,4,Tut,Introduction To Communication Networks,5CSEN T18
+MATH 501,MET Computer Science 5th Semester II,1,4,Tut,Mathematics V (Discrete Math),5CSEN T18
+CSEN 502,MET Computer Science 5th Semester II,2,1,Tut,Theory of Computation,5CSEN T18
+DMET 501,MET Computer Science 5th Semester II,1,2,Tut,Introduction to media Engineering,5CSEN T18
+CSEN 605,MET Computer Science 5th Semester II,6,3,Tut,Digital System Design ,5CSEN T18
+CSEN 605,MET Computer Science 5th Semester II,1,2,Tut,Digital System Design ,5CSEN T19
+MATH 501,MET Computer Science 5th Semester II,2,1,Tut,Mathematics V (Discrete Math),5CSEN T19
+CSEN 502,MET Computer Science 5th Semester II,2,4,Tut,Theory of Computation,5CSEN T19
+CSEN 501,MET Computer Science 5th Semester II,6,3,Tut,Data Base I,5CSEN T19
+DMET 501,MET Computer Science 5th Semester II,3,4,Tut,Introduction to media Engineering,5CSEN T19
+CSEN 503,MET Computer Science 5th Semester II,3,3,Tut,Introduction To Communication Networks,5CSEN T19
+MATH 501,MET Digital Media Engineering 5th Semester I,1,2,Tut,Mathematics V (Discrete Math),5DMET T20
+CSEN 501,MET Digital Media Engineering 5th Semester I,2,4,Tut,Data Base I,5DMET T20
+DMET 501,MET Digital Media Engineering 5th Semester I,2,5,Tut,Introduction to media Engineering,5DMET T20
+CSEN 605,MET Digital Media Engineering 5th Semester I,1,4,Tut,Digital System Design ,5DMET T20
+CSEN 503,MET Digital Media Engineering 5th Semester I,2,2,Tut,Introduction To Communication Networks,5DMET T20
+DMET 502,MET Digital Media Engineering 5th Semester I,3,3,Tut,Computer Graphics,5DMET T20
+CSEN 702,MET Computer Science 7th Semester I,6,4,Tut,Microprocessors,7CSEN T10
+CSEN 703,MET Computer Science 7th Semester I,4,3,Tut,Analysis and Design of Algorithms,7CSEN T10
+DMET 502,MET Computer Science 7th Semester I,4,2,Tut,Computer Graphics,7CSEN T10
+CSEN 701,MET Computer Science 7th Semester I,6,1,Tut,Embedded System Architecture ,7CSEN T10
+CSEN 701,MET Computer Science 7th Semester I,4,2,Tut,Embedded System Architecture ,7CSEN T11
+DMET 502,MET Computer Science 7th Semester I,6,4,Tut,Computer Graphics,7CSEN T11
+CSEN 702,MET Computer Science 7th Semester I,5,5,Tut,Microprocessors,7CSEN T11
+CSEN 703,MET Computer Science 7th Semester I,5,4,Tut,Analysis and Design of Algorithms,7CSEN T11
+CSEN 702,MET Computer Science 7th Semester I,6,2,Tut,Microprocessors,7CSEN T12
+CSEN 703,MET Computer Science 7th Semester I,4,2,Tut,Analysis and Design of Algorithms,7CSEN T12
+DMET 502,MET Computer Science 7th Semester I,5,2,Tut,Computer Graphics,7CSEN T12
+CSEN 701,MET Computer Science 7th Semester I,5,5,Tut,Embedded System Architecture ,7CSEN T12
+CSEN 701,MET Computer Science 7th Semester I,5,4,Tut,Embedded System Architecture ,7CSEN T13
+CSEN 702,MET Computer Science 7th Semester I,4,3,Tut,Microprocessors,7CSEN T13
+CSEN 703,MET Computer Science 7th Semester I,1,2,Tut,Analysis and Design of Algorithms,7CSEN T13
+DMET 502,MET Computer Science 7th Semester I,6,2,Tut,Computer Graphics,7CSEN T13
+CSEN 703,MET Computer Science 7th Semester I,1,1,Tut,Analysis and Design of Algorithms,7CSEN T14
+CSEN 702,MET Computer Science 7th Semester I,4,4,Tut,Microprocessors,7CSEN T14
+DMET 502,MET Computer Science 7th Semester I,4,3,Tut,Computer Graphics,7CSEN T14
+CSEN 701,MET Computer Science 7th Semester I,5,2,Tut,Embedded System Architecture ,7CSEN T14
+CSEN 701,MET Computer Science 7th Semester I,4,3,Tut,Embedded System Architecture ,7CSEN T15
+CSEN 703,MET Computer Science 7th Semester I,4,4,Tut,Analysis and Design of Algorithms,7CSEN T15
+CSEN 702,MET Computer Science 7th Semester I,5,2,Tut,Microprocessors,7CSEN T15
+DMET 502,MET Computer Science 7th Semester I,5,4,Tut,Computer Graphics,7CSEN T15
+DMET 704,MET Digital Media Engineering 7th Semester I,6,3,Tut,Multimedia and Networking,7DMET T17
+DMET 702,MET Digital Media Engineering 7th Semester I,5,5,Tut,Visualization and Animation,7DMET T17
+CSEN 701,MET Digital Media Engineering 7th Semester I,6,2,Tut,Embedded System Architecture ,7DMET T17
+DMET 703,MET Digital Media Engineering 7th Semester I,1,3,Tut,Video and Audio Technology,7DMET T17
+CSEN 701,MET Digital Media Engineering 7th Semester I,6,3,Tut,Embedded System Architecture ,7DMET T18
+DMET 703,MET Digital Media Engineering 7th Semester I,4,4,Tut,Video and Audio Technology,7DMET T18
+DMET 702,MET Digital Media Engineering 7th Semester I,4,5,Tut,Visualization and Animation,7DMET T18
+DMET 704,MET Digital Media Engineering 7th Semester I,6,4,Tut,Multimedia and Networking,7DMET T18
+CSEN 901,MET Computer Science 9th Semester I,1,4,Tut,Artificial Intelligence,9CSEN T08
+DMET 901,MET Computer Science 9th Semester I,1,5,Tut,Computer Vision,9CSEN T08
+DMET 901,MET Computer Science 9th Semester I,3,4,Tut,Computer Vision,9CSEN T09
+CSEN 901,MET Computer Science 9th Semester I,3,3,Tut,Artificial Intelligence,9CSEN T09
+CSEN 901,MET Computer Science 9th Semester I,3,4,Tut,Artificial Intelligence,9CSEN T10
+DMET 901,MET Computer Science 9th Semester I,3,3,Tut,Computer Vision,9CSEN T10
+CSEN 901,MET Computer Science 9th Semester I,2,2,Tut,Artificial Intelligence,9CSEN T11
+DMET 901,MET Computer Science 9th Semester I,2,1,Tut,Computer Vision,9CSEN T11
+CSEN 901,MET Computer Science 9th Semester I,1,1,Tut,Artificial Intelligence,9CSEN T12
+DMET 901,MET Computer Science 9th Semester I,1,2,Tut,Computer Vision,9CSEN T12
+DMET 902,MET Digital Media Engineering 9th Semester I,2,4,Tut,Advanced Video Processing,9DMET T13
+DMET 901,MET Digital Media Engineering 9th Semester I,2,2,Tut,Computer Vision,9DMET T13
+DMET 902,MET Digital Media Engineering 9th Semester I,2,5,Tut,Advanced Video Processing,9DMET T14
+DMET 901,MET Digital Media Engineering 9th Semester I,2,4,Tut,Computer Vision,9DMET T14
+NETW 1009,MET Digital Media Engineering 9th Semester I,4,1,Tut,Cloud Computing (ISM),DMET EL T05
+CSEN 906,MET Digital Media Engineering 9th Semester I,4,4,Tut,Constraint Programming,EL T01
+CSEN 906,MET Computer Science 9th Semester I,4,4,Tut,Constraint Programming,EL T01
+CSEN 901,MET Digital Media Engineering 9th Semester I,1,2,Tut,Artificial Intelligence,EL T01
+MCTR 902,MET Digital Media Engineering 9th Semester I,1,3,Tut,Robotics,EL T01
+MCTR 902,MET Computer Science 9th Semester I,1,3,Tut,Robotics,EL T01
+CSEN 906,MET Computer Science 9th Semester I,3,2,Tut,Constraint Programming,EL T02
+NETW 1009,MET Computer Science 9th Semester I,2,5,Tut,Cloud Computing (ISM),EL T04
+NETW 1009,MET Computer Science 9th Semester I,4,1,Tut,Cloud Computing (ISM),EL T05

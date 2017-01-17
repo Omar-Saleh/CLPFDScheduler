@@ -461,6 +461,7 @@ handle_api(Request) :-
         consult(kb1),
         once(generateScheduleConfigurations(BestConfig, 1)),
         scheduleCourses(BestConfig, CollectiveList),
+        % scheduleCourses(L, Schedule, TotalGaps, Score ,Difference, Groups),
         % print(Schedule),
         % prolog_to_json(Schedule, X),
         convertScheduleToJSON(Schedule, X),

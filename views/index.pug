@@ -2,4 +2,10 @@ html
   head
     title= title
   body
-    h1= message
+    h1= 'bla bla'
+    form(role="form", action="/uploadSchedule", method="post", enctype="multipart/form-data")
+      div(class="form-group")
+        label Upload File
+        input(type="file", name="myfile", id="myfile")
+        input(type='submit',value='Submit',data-transition='fade', data-theme='c')
+
