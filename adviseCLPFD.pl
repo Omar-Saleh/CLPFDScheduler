@@ -285,7 +285,7 @@ handle_api(Request) :-
         format('Content-type: text/plain~n~n'),
         % print(Request),
         consult(kb1),
-        scheduleCourses(L, Schedule, TotalGaps, Score, Difference),
+        scheduleCourses(L, Schedule, TotalGaps, Score ,Difference, Groups),
         % print(Schedule),
         % prolog_to_json(Schedule, X),
         convertScheduleToJSON(Schedule, X),
