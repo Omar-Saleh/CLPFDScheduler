@@ -111,19 +111,19 @@ scheduleCourses(CollectiveList, BestConfig):-
     CollectiveList).
   % print(L),
 
-oldSchedule(L, Schedule, TotalGaps, Difference, Score):-
+oldSchedule(L, Schedule, Difference, Score):-
   scheduleCourse([1,2,3], L1, Schedule, Groups, LectureGroup),
   delete(L1, 0, L),
   all_different(L),
   countUniqueGroups(Groups, Score),
   append(L, Groups, ToBeLabeled),
   append(ToBeLabeled, LectureGroup, FinalLabeling),
-  print(L),
-  nl,
-  generateBooleanSchedule(L, BoolSchedule, 1),
-  testGaps(1, BoolSchedule, TotalGaps),
-  print(TotalGaps),
-  print(L),
+%  print(L),
+%  nl,
+%  generateBooleanSchedule(L, BoolSchedule, 1),
+%  testGaps(1, BoolSchedule, TotalGaps),
+%  print(TotalGaps),
+%  print(L),
   differenceBetweenStartAndFinish(L, Difference),
   labeling([ff, max(Score), min(Difference)], FinalLabeling).
 
@@ -456,14 +456,16 @@ testSlots(Current, Max, Schedule, Res):-
 
 handle_api(Request) :-
         % http_read_json_dict(Request, Query),
-        format('Content-type: text/plain~n~n'),
+        % format('Content-type: text/plain~n~n'),
         % print(Request),
         consult(kb1),
         once(generateScheduleConfigurations(BestConfig, 1)),
-        scheduleCourses(BestConfig, CollectiveList),
+        % scheduleCourses(BestConfig, CollectiveList),
+        % CollectiveList = [(A, B) | T],
         % scheduleCourses(L, Schedule, TotalGaps, Score ,Difference, Groups),
         % print(Schedule),
         % prolog_to_json(Schedule, X),
+        oldSchedule(_, Schedule, _, _),
         convertScheduleToJSON(Schedule, X),
         reply_json_dict(X).
 

@@ -18,7 +18,7 @@ app.get('/', function (req, res) {
 })
 
 app.post('/uploadSchedule', upload.single('myfile'), function(req, res) {
-  console.log('Here');
+  console.log('Here######');
   console.dir(req.file);
   // fireUp(req.file.path, res);
   list = [
@@ -34,7 +34,7 @@ app.post('/uploadSchedule', upload.single('myfile'), function(req, res) {
   "slot(4,'Lab',13,1)",
   "slot(4,'Lab',14,1)"
 ];
-  fireUp('uploads/2dd13392cb0b0cbc6d1143091b38fd14', res);
+  fireUp(req.file['path'], res);
 });
 
 
@@ -163,6 +163,8 @@ function mapScheduleToUniqueNumbers(listOfCourses, res) {
     }
   }
 
+  // console.log(listOfCourses);
+
   // var a = listOfCourses
 
 
@@ -176,9 +178,11 @@ function mapScheduleToUniqueNumbers(listOfCourses, res) {
   // console.log(listOfCourses[0]['group']);
   // console.log(listOfCourses[0]['group'].replace(/[^\d]/g, ''));
   var textToWrite = "";
-
+  console.log(courseMap);
   for(var i = 1; i < Object.keys(courseMap).length + 1; i++)
   {
+    // console.log('here');
+
     var lecs = lectureMap[i];
     var tuts = tutorialMap[i];
     var labs = labMap[i];
@@ -321,26 +325,34 @@ function mapScheduleToUniqueNumbers(listOfCourses, res) {
     // console.log("tutorial2(" + i + ", [" + tuts2 + "]).");
     // console.log("labs1(" + i + ", [" + labs1 + "]).");
     // console.log("labs2(" + i + ", [" + labs2 + "]).");
-    if(tuts1.length == 1 &&  tuts1[0] = 0 && !(labs1.length == 1 && labs1[0] == 0))
+
+
+    if(tuts1.length == 1 &&  tuts1[0] == 0 && !(labs1.length == 1 && labs1[0] == 0))
     {
+
       tuts1 = [];
       tuts2 = [];
-
-      for(var j = 0; i < labs1.length; j++)
+      // console.log(i);
+      for(var j = 0; j < labs1.length; j++)
       {
-        tuts1.concat([0]);
-        tuts2.concat([0]);
+        // console.log('hi');
+        tuts1 = tuts1.concat([0]);
+        tuts2 = tuts2.concat([0]);
+        // console.log(tuts1);
       }
+
+      // if(i == 4)
+      //   console.log(tuts1);
     }
-    else if(labs1.length == 1 &&  labs1[0] = 0 && !(tuts1.length == 1 && tuts1[0] == 0))
+    else if(labs1.length == 1 &&  labs1[0] == 0 && !(tuts1.length == 1 && tuts1[0] == 0))
     {
       labs1 = [];
       labs2 = [];
 
-      for(var j = 0; i < tuts1.length; j++)
+      for(var j = 0; j < tuts1.length; j++)
       {
-        labs1.concat([0]);
-        labs2.concat([0]);
+        labs1 = labs1.concat([0]);
+        labs2 = labs2.concat([0]);
       }
     }
 
@@ -354,37 +366,42 @@ function mapScheduleToUniqueNumbers(listOfCourses, res) {
 
     fs.writeFileSync('kb1.pl', textToWrite, 'utf8');
 
+  }
 
-
+    console.log('Here%%%%');  
   // var file = new File("facts.txt");
   // file.open("w");
   // file.writeln("hello!");
   // file.close();
-  myMethod(res);
-//   var options = {
-//   host: '127.0.0.1',
-//   path: '/api',
-//   port: '8000'
-// };
-// //
-// callback = function(response) {
-//   var str = '';
+  var options = {
+    host: '127.0.0.1',
+    path: '/api',
+    port: '8000'
+  };
+//
+callback = function(response) {
+  var str = '';
 
-//   //another chunk of data has been recieved, so append it to `str`
-//   response.on('data', function (chunk) {
-//     str += chunk;
-//   });
+  //another chunk of data has been recieved, so append it to `str`
+  response.on('data', function (chunk) {
+    str += chunk;
+  });
 
-//   //the whole response has been recieved, so we just print it out here
-//   response.on('end', function () {
-//     res.render('/compiledSchedule', { list: str });
-//     console.log(str);
-//   });
+  response.on('error', function(err) {
+    console.log(err);
+  });
+
+  //the whole response has been recieved, so we just print it out here
+  response.on('end', function () {
+      console.log('Here!!!!!');
+      myMethod(res);
+    });
+  }
+
+http.request(options, callback).end();
 }
 //
-// http.request(options, callback).end();
 
-}
 
 //   var options = {
 //   host: '127.0.0.1',
