@@ -20,13 +20,32 @@ http_json:json_type('text/x-json').
 % ------------ Facts ------------ %
 % 1 -> Math, 2 -> CS 1, 3 -> Advanced
 
+lecture1(1,[9,9,22,22,28,28,27,27,6,6]).
+lecture2(1,[0,0,0,0,0,0,0,0,0,0]).
+tutorial1(1,[16,11,16,12,13,13,11,11,11,19,3,3,19,19,12,20,18,18,6,4,4,6,6,22,22,6,7,21,21,1,1,1,26,26,8,8,7,5,5,9,8,28,28,7,7]).
+tutorial2(1,[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]).
+lab1(1,[17,18,17,18,18,28,28,12,12,24,14,14,20,20,14,24,24,24,22,22,22,27,7,27,27,7,10,23,23,2,2,2,29,29,21,23,8,21,21,21,9,30,30,8,8]).
+lab2(1,[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]).
+lecture1(2,[24,23]).
+lecture2(2,[0,0]).
+tutorial1(2,[22,22,9,10,10,29,17,13,9,10,25,24,7,14,8,18,18,18,14]).
+tutorial2(2,[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]).
+lab1(2,[29,29,29,22,13,30,30,30,13,14,28,28,8,18,14,19,22,25,22]).
+lab2(2,[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]).
+lecture1(3,[27,26]).
+lecture2(3,[0,0]).
+tutorial1(3,[13,16,23,29,14,13,13,9,14,17,24,22,24,27,27,22,7,27,25]).
+tutorial2(3,[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]).
+lab1(3,[30,30,16,16,9,10,29,29,17,9,14,14,25,19,22,25,19,22,24]).
+lab2(3,[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]).
+
 % lecture(CourseNum, Slot, Group)
 
-scheduleCourse([], [], [], []).
+scheduleCourse([], [], [], [], []).
 
 % Score is calculated in the case that the course consists of a tutorial and a lab, it is calculated as the absloute difference between the tutorial Group
 % And the lab Group.
-scheduleCourse(CourseList, L, Schedule, Groups):-
+scheduleCourse(CourseList, L, Schedule, Groups, LectureGroup):-
   CourseList = [H | T],
   L1 = [X1, X2, X3, X4, X5, X6],
   L1 ins 0..30,
@@ -50,7 +69,7 @@ scheduleCourse(CourseList, L, Schedule, Groups):-
   X5 #\= 0 #/\ X3 #\= 0 #==> Execute #= 1,
   X5 #= 0 #\/ X3 #= 0 #==> Execute #= 0,
   calculateScore(Y2, Y3, Execute, CurrentScore),
-  scheduleCourse(T, L2, RestOfSchedule, RestOfGroups),
+  scheduleCourse(T, L2, RestOfSchedule, RestOfGroups, RestOfLectureGroups),
   Score #= NewScore + CurrentScore,
   parseSchedule(H, Y1, [X1, X2], LectureSchedule, 'Lecture'),
   parseSchedule(H, Y2, [X3, X4], TutorialSchedule, 'Tutorial'),
@@ -60,21 +79,97 @@ scheduleCourse(CourseList, L, Schedule, Groups):-
   % print('Here'),
   % nl,
   append([Y2], RestOfGroups, Groups),
+  append([Y1], RestOfLectureGroups, LectureGroup),
   append(L1, L2, L).
 
-scheduleCourses(L, Schedule, TotalGaps, Score ,Difference, Groups):-
-  scheduleCourse([1, 2, 3, 4], L1, Schedule, Groups),
+scheduleCourses(CollectiveList, BestConfig):-
+    findall(
+    (Schedule, L),
+    (
+      % [1, 2, 3]
+      scheduleCourse(BestConfig, L1, Schedule, Groups, LectureGroup),
+      delete(L1, 0, L),
+      all_different(L),
+      countUniqueGroups(Groups, Score),
+      append(L, Groups, ToBeLabeled),
+      append(ToBeLabeled, LectureGroup, FinalLabeling),
+      % print('Heree'),
+      % nl,
+      % print(L),
+      % nl,
+      % countGaps(1, L, TotalGaps),
+      differenceBetweenStartAndFinish(L, Difference),
+      labeling([ff, max(Score), min(Difference)], FinalLabeling)
+      % ( countDaysOff(L, 1, 5) ;
+      %   countDaysOff(L, 6, 10) ;
+      %   countDaysOff(L, 11, 15) ;
+      %   countDaysOff(L, 16, 20) ;
+      %   countDaysOff(L, 21, 25) ;
+      %   countDaysOff(L, 26, 30)
+      % )
+    ),
+    CollectiveList).
+  % print(L),
+
+oldSchedule(L, Schedule, TotalGaps, Difference, Score):-
+  scheduleCourse([1,2,3], L1, Schedule, Groups, LectureGroup),
   delete(L1, 0, L),
   all_different(L),
   countUniqueGroups(Groups, Score),
   append(L, Groups, ToBeLabeled),
-  % countGaps(1, L, TotalGaps),
+  append(ToBeLabeled, LectureGroup, FinalLabeling),
+  print(L),
+  nl,
+  generateBooleanSchedule(L, BoolSchedule, 1),
+  testGaps(1, BoolSchedule, TotalGaps),
+  print(TotalGaps),
+  print(L),
   differenceBetweenStartAndFinish(L, Difference),
-  labeling([max(Score), min(Difference)], ToBeLabeled).
-  % print(L),
+  labeling([ff, max(Score), min(Difference)], FinalLabeling).
+
+
+generateBooleanSchedule(_, [], 31).
+
+generateBooleanSchedule(L, BoolSchedule):-
+  length(BoolSchedule, 30),
+  BoolSchedule ins 0..1,
+  element(L, BoolSchedule, 1).
+
+
+chooseScheduleWithMinGaps(CollectiveList, GapList, Schedule):-
+  countAllScheduleGaps(CollectiveList, GapList),
+  findAcceptableSchedule(CollectiveList, GapList, Schedule).
 
 %  findall(L, labeling([min(Score)], L), L2),
 %  print(L2).
+findAcceptableSchedule(CollectiveList, GapList, Schedule):-
+  min_list(GapList, Min),
+  nth1(Min, CollectiveList, CollectiveList),
+  CollectiveEntry = (Schedule, Candidate),
+  ( countDaysOff(Candidate, 1, 5) ;
+    countDaysOff(Candidate, 6, 10) ;
+    countDaysOff(Candidate, 11, 15) ;
+    countDaysOff(Candidate, 16, 20) ;
+    countDaysOff(Candidate, 21, 25) ;
+    countDaysOff(Candidate, 26, 30)
+  ).
+
+findAcceptableSchedule(CollectiveList, GapList, Schedule):-
+  min_list(GapList, Min),
+  nth1(Min, CollectiveList, CollectiveList),
+  CollectiveEntry = (_, Candidate),
+  \+( countDaysOff(Candidate, 1, 5) ;
+    countDaysOff(Candidate, 6, 10) ;
+    countDaysOff(Candidate, 11, 15) ;
+    countDaysOff(Candidate, 16, 20) ;
+    countDaysOff(Candidate, 21, 25) ;
+    countDaysOff(Candidate, 26, 30)
+  ),
+  delete(Min, GapList, NewGapList),
+  delete(CollectiveEntry, CollectiveList, NewCollectiveList),
+  findAcceptableSchedule(NewCollectiveList, NewGapList, Schedule).
+
+
 
 generateScheduleConfigurations(L2, Probation):-
   CourseHours = [0, 8, 4, 10],
@@ -97,15 +192,15 @@ generateScheduleConfigurations(L2, Probation):-
   Probation #= 0 #==> SemesterHours #< 34,
   Probation #= 1 #==> SemesterHours #< 31,
   SemesterHours #> 0,
-  % labeling([max(SemesterHours)], L1),
-  % delete(L1, 1, L),
-  % all_different(L),
-  % sort(L, L2).
-  findall(L3, (labeling([max(SemesterHours)], L1),
-            delete(L1, 1, L),
-            all_different(L),
-            sort(L, L3)),
-        L2).
+  labeling([max(SemesterHours)], L1),
+  delete(L1, 1, L),
+  all_different(L),
+  sort(L, L2).
+  % findall(L3, (labeling([max(SemesterHours)], L1),
+  %           delete(L1, 1, L),
+  %           all_different(L),
+  %           sort(L, L3)),
+  %       L2).
   % findall(L1, (labeling([max(SemesterHours)], L1), delete(L1, 1, L), all_different(L)) , L2).
 
 generateAllowedCoursesList(L):-
@@ -182,35 +277,10 @@ parseSchedule(X1, Group, [A | B], Schedule, Type):-
 
 countGaps(31, _, 0).
 
-countGaps(Slot, Schedule, TotalGaps):-
-  Slot #< 31,
-  element(_, Schedule, AnySlot),
-  print(AnySlot),
-  nl,
-  print(Slot),
-  nl,
-  print(Schedule),
-  nl,
-  Start #= ((Slot // 5) * 5) + 1,
-  Finish #= ((Slot // 5) + 1) * 5,
-  RightBefore #= Slot - 1,
-  RightAfter #= Slot + 1,
-  findASlotBetween(Start, RightBefore, Schedule, Res1),
-  findASlotBetween(RightAfter, Finish, Schedule, Res2),
-  (AnySlot #\= Slot #/\ Res1 #= 1 #/\ Res2 #= 0) #==> TotalGaps #= RestOfGaps,
-  (AnySlot #\= Slot #/\ Res1 #= 0 #/\ Res2 #= 1) #==> TotalGaps #= RestOfGaps,
-  (AnySlot #\= Slot #/\ Res1 #= 0 #/\ Res2 #= 0) #==> TotalGaps #= RestOfGaps,
-  (AnySlot #\= Slot #/\ Res1 #= 1 #/\ Res2 #= 1) #==> TotalGaps #= RestOfGaps + 1,
-  AnySlot #= Slot  #==> TotalGaps #= RestOfGaps,
-  NewSlot #= Slot + 1,
-  countGaps(NewSlot, Schedule, RestOfGaps).
-
-% countGaps(Slot, Schedule, TotalGaps):-
+% countGaps(Slot, Schedule, Vars, TotalGaps):-
 %   Slot #< 31,
-%   \+element(_, Schedule, Slot),
+%   element(_, Schedule, AnySlot),
 %   print(Slot),
-%   nl,
-%   print(Schedule),
 %   nl,
 %   Start #= ((Slot // 5) * 5) + 1,
 %   Finish #= ((Slot // 5) + 1) * 5,
@@ -218,9 +288,54 @@ countGaps(Slot, Schedule, TotalGaps):-
 %   RightAfter #= Slot + 1,
 %   findASlotBetween(Start, RightBefore, Schedule, Res1),
 %   findASlotBetween(RightAfter, Finish, Schedule, Res2),
-%   Res1 #= 1 #/\ Res2 #= 1 #==> TotalGaps #= RestOfGaps + 1,
-%   Res1 #\= 1 #\/ Res2 #\= 1 #==> TotalGaps #= RestOfGaps,
-%   countGaps(RightAfter, Schedule, RestOfGaps).
+%   countGaps(RightAfter, Schedule, RestOfVars, RestOfGaps),
+%   append([AnySlot], RestOfVars, Vars),
+%   AnySlot #\= Slot #==> TotalGaps #= RestOfGaps,
+%   AnySlot #= Slot #/\ Res1 #= 1 #/\ Res2 #= 1 #==> TotalGaps #= 1 + RestOfGaps,
+%   AnySlot #= Slot #/\ Res1 #= 1 #/\ Res2 #= 0 #==> TotalGaps #= RestOfGaps,
+%   AnySlot #= Slot #/\ Res1 #= 0 #/\ Res2 #= 1 #==> TotalGaps #= RestOfGaps,
+%   AnySlot #= Slot #/\ Res1 #= 0 #/\ Res2 #= 0 #==> TotalGaps #= RestOfGaps.
+
+countGaps(Slot, Schedule, TotalGaps):-
+  Slot #< 31,
+  element(_, Schedule, Slot),
+  % print(Slot),
+  % nl,
+  % print(Schedule),
+  % nl,
+  % print('----!'),
+  % nl,
+  NewSlot #= Slot + 1,
+  countGaps(NewSlot, Schedule, RestOfGaps),
+  TotalGaps #= RestOfGaps.
+
+countGaps(Slot, Schedule, TotalGaps):-
+  Slot #< 31,
+  % \+element(_, Schedule, Slot),
+  % print(Slot),
+  % nl,
+  % print(Schedule),
+  % nl,
+  % print('----!'),
+  % nl,
+  Start #= ((Slot // 5) * 5) + 1,
+  Finish #= ((Slot // 5) + 1) * 5,
+  RightBefore #= Slot - 1,
+  RightAfter #= Slot + 1,
+  findASlotBetween(Start, RightBefore, Schedule, Res1),
+  findASlotBetween(RightAfter, Finish, Schedule, Res2),
+  Res1 #= 1 #/\ Res2 #= 1 #==> TotalGaps #= RestOfGaps + 1,
+  Res1 #\= 1 #\/ Res2 #\= 1 #==> TotalGaps #= RestOfGaps,
+  countGaps(RightAfter, Schedule, RestOfGaps).
+
+countAllScheduleGaps([], 0).
+
+countAllScheduleGaps([H | T], GapList):-
+  H = (A, B),
+  countGaps(1, B, CurrentGaps),
+  countAllScheduleGaps(T, RestOfGapList),
+  append([CurrentGaps], RestOfGapList, GapList).
+
 
 findASlotBetween(Current, Max, _, 0):-
   Current #> Max.
@@ -277,6 +392,65 @@ countUniqueHelper(A, [H|T], Res):-
   A #= H #==> Res #= RestOfRes + 1,
   A #\= H #==> Res #= RestOfRes.
 
+%
+countDaysOff(Schedule, Start, Finish):-
+  Start #> Finish.
+
+countDaysOff(Schedule, Start, Finish):-
+  Start #=< Finish,
+  \+element(_, Schedule, Start),
+  NewStart #= Start + 1,
+  countDaysOff(Schedule, NewStart, Finish).
+
+
+  testGaps(31, _, 0).
+
+  testGaps(Slot, Schedule, TotalGaps):-
+    Slot #< 31,
+    element(Slot, Schedule, BoolAssigned),
+    Start #= (((Slot - 1) // 5) * 5) + 1,
+    Finish #= (((Slot - 1) // 5) + 1) * 5,
+    RightBefore #= Slot - 1,
+    RightAfter #= Slot + 1,
+    testGaps(RightAfter, Schedule, RestOfGaps),
+    % print(RightBefore),
+    % print(RightAfter),
+    % print(Start),
+    % print(Finish),
+    % print('---'),
+    % nl,
+    testSlots(Start, RightBefore, Schedule, Res1),
+    testSlots(RightAfter, Finish, Schedule, Res2),
+    % print(Res1),
+    % nl,
+    % print(Res2),
+    % nl,
+    % print('----'),
+    % nl,
+    BoolAssigned #= 0 #/\ Res1 #= 1 #/\ Res2 #= 1 #==> TotalGaps #= 1 + RestOfGaps,
+    BoolAssigned #= 0 #/\ Res1 #= 1 #/\ Res2 #= 0 #==> TotalGaps #= RestOfGaps,
+    BoolAssigned #= 0 #/\ Res1 #= 0 #/\ Res2 #= 1 #==> TotalGaps #= RestOfGaps,
+    BoolAssigned #= 0 #/\ Res1 #= 0 #/\ Res2 #= 0 #==> TotalGaps #= RestOfGaps,
+    BoolAssigned #= 1 #==> TotalGaps #= RestOfGaps.
+% [1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+
+testSlots(Current, Max, _, 0):-
+  Current #> Max.
+
+testSlots(Current, Max, Schedule, Res):-
+  % print('Here'),
+  % nl,
+  Current #=< Max,
+  element(Current, Schedule, 1),
+  Res #= 1.
+
+testSlots(Current, Max, Schedule, Res):-
+  % print('Here'),
+  % nl,
+  Current #=< Max,
+  element(Current, Schedule, 0),
+  NewCurrent #= Current + 1,
+  findASlotBetween(NewCurrent, Max, Schedule, Res).
 
 %%%%%% Server Perdicates
 
@@ -285,7 +459,8 @@ handle_api(Request) :-
         format('Content-type: text/plain~n~n'),
         % print(Request),
         consult(kb1),
-        scheduleCourses(L, Schedule, TotalGaps, Score, Difference),
+        once(generateScheduleConfigurations(BestConfig, 1)),
+        scheduleCourses(BestConfig, CollectiveList),
         % print(Schedule),
         % prolog_to_json(Schedule, X),
         convertScheduleToJSON(Schedule, X),
