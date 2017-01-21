@@ -125,7 +125,9 @@ oldSchedule(Schedule, BestConfig):-
 %  print(TotalGaps),
 %  print(L),
   differenceBetweenStartAndFinish(L, Difference),
-  labeling([ff, max(Score), min(Difference)], FinalLabeling),
+  countGaps(1, L, TotalGaps),
+  % print('Here'),
+  labeling([ff, max(Score), min(TotalGaps), min(Difference)], FinalLabeling),
   ( countDaysOff(L, 1, 5) ;
     countDaysOff(L, 6, 10) ;
     countDaysOff(L, 11, 15) ;
@@ -318,7 +320,7 @@ countGaps(Slot, Schedule, TotalGaps):-
 
 countGaps(Slot, Schedule, TotalGaps):-
   Slot #< 31,
-  % \+element(_, Schedule, Slot),
+  \+element(_, Schedule, Slot),
   % print(Slot),
   % nl,
   % print(Schedule),
@@ -331,9 +333,9 @@ countGaps(Slot, Schedule, TotalGaps):-
   RightAfter #= Slot + 1,
   findASlotBetween(Start, RightBefore, Schedule, Res1),
   findASlotBetween(RightAfter, Finish, Schedule, Res2),
+  countGaps(RightAfter, Schedule, RestOfGaps),
   Res1 #= 1 #/\ Res2 #= 1 #==> TotalGaps #= RestOfGaps + 1,
-  Res1 #\= 1 #\/ Res2 #\= 1 #==> TotalGaps #= RestOfGaps,
-  countGaps(RightAfter, Schedule, RestOfGaps).
+  Res1 #\= 1 #\/ Res2 #\= 1 #==> TotalGaps #= RestOfGaps.
 
 countAllScheduleGaps([], 0).
 
